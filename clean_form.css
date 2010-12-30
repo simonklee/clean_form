@@ -7,12 +7,12 @@ select,
 textarea {
   font: 16px/1.5 sans-serif;
 }
+form {
+  width: 512px;
+}
 form ul {
   list-style-type: none;
   padding-left: 0;
-}
-form {
-  width: 512px;
 }
 form > ul > li {
   margin-bottom: 20px;
