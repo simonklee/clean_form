@@ -60,6 +60,3 @@ form.my_form > ul > li input[type=checkbox], form.my_form > ul > li input[type=r
 form.my_form > ul > li > input[type=text], form.my_form > ul > li > input[type=password], form.my_form > ul > li > textarea {
   padding: 0;
 }
-div.clear {
-  clear: both;
-}
