@@ -1,0 +1,65 @@
+div.clear {
+  clear: both;
+}
+body,
+input,
+select,
+textarea {
+  font: 16px/1.5 sans-serif;
+}
+form ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+form {
+  width: 512px;
+}
+form > ul > li {
+  margin-bottom: 20px;
+}
+form > ul > li > label, form > ul > li > div.text_left {
+  float: left;
+}
+form > ul > li > input[type=text],
+form > ul > li > input[type=password],
+form > ul > li > select,
+form > ul > li > textarea,
+form > ul > li > ul,
+form > ul > li > div.text_right,
+form > ul > li > input[type=submit] {
+  float: right;
+}
+form > ul > li > label {
+  width: 256px;
+}
+form > ul > li > ul, form > ul > li > div.text_right {
+  width: 256px;
+}
+form > ul > li > input[type=text],
+form > ul > li > input[type=password],
+form > ul > li > select,
+form > ul > li > textarea {
+  border: 1px solid #bfbfbf;
+  width: 254px;
+}
+form > ul > li label,
+form > ul > li > input[type=text],
+form > ul > li > input[type=password],
+form > ul > li > div.text_left,
+form > ul > li > div.text_right {
+  height: 24px;
+  line-height: 24px;
+}
+form > ul > li > textarea {
+  height: 192px;
+}
+form > ul > li > select[multiple=multiple] {
+  height: 96px;
+}
+form > ul > li input[type=checkbox], form > ul > li input[type=radio] {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+form > ul > li > input[type=text], form > ul > li > input[type=password], form > ul > li > textarea {
+  padding: 0;
+}

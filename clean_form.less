@@ -1,0 +1,91 @@
+@field_border_color: #bfbfbf;
+@field_border_size: 1px;
+@field_height: 24px;
+@field_margin_bottom: 20px;
+@form_left_width: @form_width / 2;
+@form_right_width: @form_width / 2;
+@form_width: 512px;
+@select_multiple_height: @field_height * 4;
+@textarea_height: @field_height * 8;
+
+div.clear {
+    clear: both;
+}
+
+body, input, select, textarea {
+    font: 16px/1.5 sans-serif;
+}
+
+form ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+form {
+    width: @form_width;
+
+    > ul {
+        > li {
+            margin-bottom: @field_margin_bottom;
+
+            > label,
+            > div.text_left {
+                float: left;
+            }
+
+            > input[type=text],
+            > input[type=password],
+            > select,
+            > textarea,
+            > ul,
+            > div.text_right,
+            > input[type=submit] {
+                float: right;
+            }
+
+            > label {
+                width: @form_left_width;
+            }
+
+            > ul,
+            > div.text_right {
+                width: @form_right_width;
+            }
+
+            > input[type=text],
+            > input[type=password],
+            > select,
+            > textarea {
+                border: @field_border_size solid @field_border_color;
+                width: @form_right_width - (@field_border_size * 2);
+            }
+
+            label,
+            > input[type=text],
+            > input[type=password],
+            > div.text_left,
+            > div.text_right {
+                height: @field_height;
+                line-height: @field_height;
+            }
+
+            > textarea {
+                height: @textarea_height;
+            }
+
+            > select[multiple=multiple] {
+                height: @select_multiple_height;
+            }
+
+            input[type=checkbox],
+            input[type=radio] {
+                margin-left: 0;
+                margin-right: 0.5em;
+            }
+
+            > input[type=text], > input[type=password], > textarea {
+                padding: 0;
+            }
+        }
+    }
+}
