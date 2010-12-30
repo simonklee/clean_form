@@ -2,7 +2,7 @@
 
 This is a HTML form styled using less.js. The form is designed to have a
 consistent look among the fields, and the elements that receive input should
-look native on all platforms. It’s easy to customize, extend and maintain.
+look native on all platforms. It’s easy to customize, extend, and maintain.
 
 ## License
 
