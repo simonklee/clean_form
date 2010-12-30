@@ -1,24 +1,31 @@
-@form_width: 512px;
-@form_left_width: @form_width / 2;
-@form_right_width: @form_width / 2;
+body, input, select, textarea {
+    font: 16px/1.5 sans-serif;
+}
 
-@field_border_color: #bfbfbf;
-@field_border_size: 1px;
-@field_height: 24px;
-@field_margin_bottom: 20px;
+form.my_form {
+    // Specfify the width of the form, the width of the left and right side
+    // of the form, and use the default values for the remaining arguments.
 
-@select_multiple_height: @field_height * 4;
-@textarea_height: @field_height * 8;
+    .clean_form(400px, 200px, 200px);
+}
 
 div.clear {
     clear: both;
 }
 
-body, input, select, textarea {
-    font: 16px/1.5 sans-serif;
-}
+.clean_form (
+    @form_width: 512px,
+    @form_left_width: 256px,
+    @form_right_width: 256px,
 
-form {
+    @field_border_color: #bfbfbf,
+    @field_border_size: 1px,
+    @field_height: 24px,
+    @field_margin_bottom: 24px,
+
+    @select_multiple_height: 96px,
+    @textarea_height: 192px) {
+
     width: @form_width;
 
     ul {
