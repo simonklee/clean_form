@@ -15,7 +15,8 @@ look native on all platforms.
 3. `lessc clean_form.less clean_form.css`.
 
 4. Modify the structure of your HTML forms so that they match the one in
-   `clean_form_test.html`.
+   `clean_form_test.html`. Add the class attribute to the form elements with
+   the class names that you’ve defined.
 
 5. Add `<link rel="stylesheet" href="clean_form.css">` to `head` of your
    HTML file.
