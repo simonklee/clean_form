@@ -4,6 +4,18 @@ A customizable, extendable, and maintainable HTML form styled using less.js. The
 form is designed to have a consistent look among the fields, and the elements
 that receive input should look native on all platforms.
 
+# Set up
+
+1. Copy clean_form.less to your CSS directory
+
+2. Modify clean_form.less by creating one or more form classes. There is
+   already defined one that you can modify.
+
+3. `lessc clean_form.less clean_form.css`
+
+4. Modify the structure of your HTML forms so that they match the one in
+   clean_form_test.html.
+
 ## License
 
 Copyright © 2010, Alexander Teinum <ateinum@gmail.com>
