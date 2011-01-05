@@ -18,7 +18,7 @@ look native on all platforms.
    `clean_form_test.html`. Add the class attribute to the form elements with
    the class names that you’ve defined.
 
-5. Add `<link rel="stylesheet" href="clean_form.css">` to `head` of your
+5. Add `<link rel="stylesheet" href="clean_form.css">` to the `head` of your
    HTML file.
 
 6. You probably also want to set the typography for all the form elements.
