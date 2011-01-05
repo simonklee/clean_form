@@ -29,7 +29,7 @@ that receive input should look native on all platforms.
 
 ## License
 
-Copyright © 2010, Alexander Teinum <ateinum@gmail.com>
+Copyright © 2010–2011, Alexander Teinum <ateinum@gmail.com>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
