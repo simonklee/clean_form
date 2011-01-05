@@ -16,6 +16,17 @@ that receive input should look native on all platforms.
 4. Modify the structure of your HTML forms so that they match the one in
    `clean_form_test.html`.
 
+5. Add `<link rel="stylesheet" href="clean_form.css">` to `head` of your
+   HTML file.
+
+6. You probably also want to set the typography for all the form elements.
+
+        body, input, select, textarea {
+            font: 16px/1.5 sans-serif;
+        }
+
+7. Refresh.
+
 ## License
 
 Copyright © 2010, Alexander Teinum <ateinum@gmail.com>
