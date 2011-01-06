@@ -1,9 +1,17 @@
 # clean_form
 
 A customizable, extendable, and maintainable HTML form styled using
-[less.js](https://github.com/cloudhead/less.js/). The form is designed to have
-a consistent look among the fields, and the elements that receive input should
-look native on all platforms.
+[less.js](https://github.com/cloudhead/less.js/).
+
+# Features
+
+ * Uses the least amount of HTML and CSS necessary to produce a form that is
+   styled properly
+ * No creativity or hacks
+ * Fields that receive text are styled with a thin border
+ * Buttons render natively on all platforms
+ * `form > ul > li` HTML structure
+ * Validates as HTML5
 
 # Setup
 
