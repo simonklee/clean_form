@@ -34,7 +34,9 @@ form.clean_form_test > ul > li > textarea {
 }
 form.clean_form_test > ul > li > div.text_left,
 form.clean_form_test > ul > li > div.text_right,
+form.clean_form_test > ul > li > input[type=checkbox],
 form.clean_form_test > ul > li > input[type=password],
+form.clean_form_test > ul > li > input[type=radio],
 form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li label {
   height: 24px;
@@ -53,8 +55,7 @@ form.clean_form_test > ul > li > textarea {
   border: 1px solid #dfdfdf;
 }
 form.clean_form_test > ul > li input[type=checkbox], form.clean_form_test > ul > li input[type=radio] {
-  margin-left: 0;
-  margin-right: 0.5em;
+  margin: 0 0.5em 0 0;
 }
 form.clean_form_test > ul > li > input[type=password], form.clean_form_test > ul > li > input[type=text], form.clean_form_test > ul > li > textarea {
   padding: 0;

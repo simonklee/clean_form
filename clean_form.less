@@ -70,7 +70,9 @@ form.clean_form_test {
 
             > div.text_left,
             > div.text_right,
+            > input[type=checkbox],
             > input[type=password],
+            > input[type=radio],
             > input[type=text],
             label {
                 height: @field_height;
@@ -96,8 +98,7 @@ form.clean_form_test {
 
             input[type=checkbox],
             input[type=radio] {
-                margin-left: 0;
-                margin-right: 0.5em;
+                margin: 0 0.5em 0 0;
             }
 
             // Set paddings.
