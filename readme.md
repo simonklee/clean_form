@@ -21,8 +21,11 @@ A customizable and maintainable HTML form styled with CSS using
    in `clean_form.less`, but keeping them in a separate file makes upgrades of
    clean_form a whole lot easier.
 
-   `<form class="foo">` uses the default settings.
+   Before you define anything, import `clean_form.less`.
 
+        @import url('clean_form.less');
+
+   `<form class="foo">` uses the default settings.
         form.foo {
             .clean_form;
         }
