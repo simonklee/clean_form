@@ -8,13 +8,16 @@ A customizable and maintainable HTML form styled with CSS using
  * Easy to use
  * Looks great
  * No creativity or hacks
- * Internet Explorer 7 is supported
- * Internet Explorer 6 is not supported
- * Compatible with [Eric Meyer Reset](http://meyerweb.com/)
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
  * `form > ul > li` HTML structure
  * Validates as HTML5
+
+## Compatibility
+
+ * All modern browsers
+ * Internet Explorer 7
+ * [Eric Meyer Reset](http://meyerweb.com/)
 
 ## Setup
 
