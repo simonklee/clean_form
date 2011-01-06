@@ -16,7 +16,7 @@ A customizable and maintainable HTML form styled with CSS using
 ## Compatibility
 
  * All modern browsers
- * Internet Explorer 7
+ * Internet Explorer 7 optionally
  * [Eric Meyer Reset](http://meyerweb.com/)
 
 ## Setup
