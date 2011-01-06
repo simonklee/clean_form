@@ -50,7 +50,7 @@ form.clean_form_test > ul > li > input[type=password],
 form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li > select,
 form.clean_form_test > ul > li > textarea {
-  border: 1px solid #bfbfbf;
+  border: 1px solid #dfdfdf;
 }
 form.clean_form_test > ul > li input[type=checkbox], form.clean_form_test > ul > li input[type=radio] {
   margin-left: 0;
