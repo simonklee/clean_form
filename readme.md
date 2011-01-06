@@ -18,9 +18,8 @@ A customizable and maintainable HTML form styled with CSS using
 1. Copy `clean_form.less` to your website directory.
 
 2. Define form classes in a separate `less`-file. Keeping them in a separate
-   file makes upgrades of clean_form a whole lot easier.
-
-   Before you define anything, import `clean_form.less`.
+   file makes upgrades of clean_form a whole lot easier. Before you define
+   anything, import `clean_form.less`.
 
         @import url('clean_form.less');
 
