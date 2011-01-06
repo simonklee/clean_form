@@ -1,6 +1,6 @@
 # clean_form
 
-A customizable, extendable, and maintainable HTML form styled using
+A customizable and maintainable HTML form styled with CSS using
 [less.js](https://github.com/cloudhead/less.js/).
 
 ## Features
