@@ -3,7 +3,7 @@
 A customizable, extendable, and maintainable HTML form styled using
 [less.js](https://github.com/cloudhead/less.js/).
 
-# Features
+## Features
 
  * Uses the least amount of HTML and CSS necessary to produce a form that is
    styled properly
@@ -13,7 +13,7 @@ A customizable, extendable, and maintainable HTML form styled using
  * `form > ul > li` HTML structure
  * Validates as HTML5
 
-# Setup
+## Setup
 
 1. Copy `clean_form.less` to your website directory.
 
