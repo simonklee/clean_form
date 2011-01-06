@@ -31,47 +31,50 @@ form.clean_form_test {
         > li {
             margin-bottom: @field_margin_bottom;
 
-            // float left
+            // Float to the left.
 
-            > label,
-            > div.text_left {
+            > div.text_left,
+            > label {
                 float: left;
             }
 
-            // float right
+            // Float to the right.
 
-            > input[type=text],
+            > div.text_right,
             > input[type=password],
+            > input[type=submit],
+            > input[type=text],
             > select,
             > textarea,
-            > ul,
-            > div.text_right,
-            > input[type=submit] {
+            > ul {
                 float: right;
             }
 
-            // width
+            // Set widths.
 
             > label {
                 width: @form_left_width;
             }
 
-            > ul, > div.text_right {
+            > ul,
+            > div.text_right {
                 width: @form_right_width;
             }
 
-            > input[type=text], > input[type=password], > select, > textarea {
-                border: @field_border_size solid @field_border_color;
+            > input[type=password],
+            > input[type=text],
+            > select,
+            > textarea {
                 width: @form_right_width - (@field_border_size * 2);
             }
 
-            // height
+            // Set heights.
 
-            label,
-            > input[type=text],
-            > input[type=password],
             > div.text_left,
-            > div.text_right {
+            > div.text_right,
+            > input[type=password],
+            > input[type=text],
+            label {
                 height: @field_height;
                 line-height: @field_height;
             }
@@ -84,16 +87,28 @@ form.clean_form_test {
                 height: @select_multiple_height;
             }
 
-            // margin
+            // Set borders.
 
-            input[type=checkbox], input[type=radio] {
+            > input[type=password],
+            > input[type=text],
+            > select,
+            > textarea {
+                border: @field_border_size solid @field_border_color;
+            }
+
+            // Set margins.
+
+            input[type=checkbox],
+            input[type=radio] {
                 margin-left: 0;
                 margin-right: 0.5em;
             }
 
-            // padding
+            // Set paddings.
 
-            > input[type=text], > input[type=password], > textarea {
+            > input[type=password],
+            > input[type=text],
+            > textarea {
                 padding: 0;
             }
         }
