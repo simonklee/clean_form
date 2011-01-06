@@ -1,0 +1,65 @@
+form.test {
+  width: 512px;
+}
+form.test ul {
+  list-style: none;
+  padding-left: 0;
+}
+form.test > ul > li {
+  margin-bottom: 24px;
+}
+form.test > ul > li > div.text_left,
+form.test > ul > li input[type=checkbox],
+form.test > ul > li input[type=radio],
+form.test > ul > li label {
+  float: left;
+}
+form.test > ul > li > div.text_right,
+form.test > ul > li > input[type=password],
+form.test > ul > li > input[type=submit],
+form.test > ul > li > input[type=text],
+form.test > ul > li > select,
+form.test > ul > li > textarea,
+form.test > ul > li > ul {
+  float: right;
+}
+form.test > ul > li > label {
+  width: 256px;
+}
+form.test > ul > li > div.text_right, form.test > ul > li > ul {
+  width: 256px;
+}
+form.test > ul > li > input[type=password],
+form.test > ul > li > input[type=text],
+form.test > ul > li > select,
+form.test > ul > li > textarea {
+  width: 254px;
+}
+form.test > ul > li > div.text_left,
+form.test > ul > li > div.text_right,
+form.test > ul > li > input[type=password],
+form.test > ul > li > input[type=text],
+form.test > ul > li input[type=checkbox],
+form.test > ul > li input[type=radio],
+form.test > ul > li label {
+  height: 24px;
+  line-height: 24px;
+}
+form.test > ul > li > textarea {
+  height: 192px;
+}
+form.test > ul > li > select[multiple=multiple] {
+  height: 96px;
+}
+form.test > ul > li > input[type=password],
+form.test > ul > li > input[type=text],
+form.test > ul > li > select,
+form.test > ul > li > textarea {
+  border: 1px solid #dfdfdf;
+}
+form.test > ul > li input[type=checkbox], form.test > ul > li input[type=radio] {
+  margin: 0 0.5em 0 0;
+}
+form.test > ul > li > input[type=password], form.test > ul > li > input[type=text], form.test > ul > li > textarea {
+  padding: 0;
+}

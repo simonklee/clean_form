@@ -5,29 +5,57 @@ A customizable, extendable, and maintainable HTML form styled using
 a consistent look among the fields, and the elements that receive input should
 look native on all platforms.
 
-# Set up
+# Setup
 
-1. Copy `clean_form.less` to your CSS directory.
+1. Copy `clean_form.less` to your website directory.
 
-2. Modify `clean_form.less` by creating one or more form classes. There is
-   already a `clean_form_test` class that you can modify.
+2. Define form classes in a separate `less`-file. You can define these classes
+   in `clean_form.less`, but keeping them in a separate file makes upgrades of
+   clean_form a whole lot easier.
 
-3. `lessc clean_form.less clean_form.css`.
+   `<form class="foo">` uses the default settings.
+
+        form.foo {
+            .clean_form;
+        }
+
+   `<form class="bar">` uses the default settings, but they are passed as
+   arguments to `.clean_form`. Copy and paste the code below if you want to
+   customize your form.
+
+        form.bar {
+            .clean_form(
+                512px,      // form width
+                256px,      // left side of form width
+                256px,      // right side of form width
+                #dfdfdf,    // field border-color
+                1px,        // field border-size
+                24px,       // field height
+                24px,       // field margin-bottom
+                96px,       // multiple select height
+                192px);     // textarea height
+        }
+
+   `<form class="baz">` uses the default settings, except for the widths.
+
+        form.baz {
+            .clean_form(
+                1024px,     // form width
+                512px,      // left side of form width
+                512px);     // right side of form width
+        }
+
+3. Compile your `less`-file.
 
 4. Modify the structure of your HTML forms so that they match the one in
-   `clean_form_test.html`. Add the class attribute to the form elements with
-   the class names that you’ve defined.
+   `test.html`. Add the class attribute to the form elements with the class
+   names that you’ve defined.
 
-5. Add `<link rel="stylesheet" href="clean_form.css">` to the `head` of your
-   HTML file.
-
-6. You probably also want to set the typography for all the form elements.
+5. You probably also want to set the typography for all the form elements.
 
         body, input, select, textarea {
             font: 16px/1.5 sans-serif;
         }
-
-7. Refresh.
 
 ## License
 
