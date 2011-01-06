@@ -8,16 +8,16 @@ form.clean_form_test ul {
 form.clean_form_test > ul > li {
   margin-bottom: 24px;
 }
-form.clean_form_test > ul > li > label, form.clean_form_test > ul > li > div.text_left {
+form.clean_form_test > ul > li > div.text_left, form.clean_form_test > ul > li > label {
   float: left;
 }
-form.clean_form_test > ul > li > input[type=text],
+form.clean_form_test > ul > li > div.text_right,
 form.clean_form_test > ul > li > input[type=password],
+form.clean_form_test > ul > li > input[type=submit],
+form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li > select,
 form.clean_form_test > ul > li > textarea,
-form.clean_form_test > ul > li > ul,
-form.clean_form_test > ul > li > div.text_right,
-form.clean_form_test > ul > li > input[type=submit] {
+form.clean_form_test > ul > li > ul {
   float: right;
 }
 form.clean_form_test > ul > li > label {
@@ -26,18 +26,17 @@ form.clean_form_test > ul > li > label {
 form.clean_form_test > ul > li > ul, form.clean_form_test > ul > li > div.text_right {
   width: 200px;
 }
-form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li > input[type=password],
+form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li > select,
 form.clean_form_test > ul > li > textarea {
-  border: 1px solid #bfbfbf;
   width: 198px;
 }
-form.clean_form_test > ul > li label,
-form.clean_form_test > ul > li > input[type=text],
-form.clean_form_test > ul > li > input[type=password],
 form.clean_form_test > ul > li > div.text_left,
-form.clean_form_test > ul > li > div.text_right {
+form.clean_form_test > ul > li > div.text_right,
+form.clean_form_test > ul > li > input[type=password],
+form.clean_form_test > ul > li > input[type=text],
+form.clean_form_test > ul > li label {
   height: 24px;
   line-height: 24px;
 }
@@ -47,10 +46,16 @@ form.clean_form_test > ul > li > textarea {
 form.clean_form_test > ul > li > select[multiple=multiple] {
   height: 96px;
 }
+form.clean_form_test > ul > li > input[type=password],
+form.clean_form_test > ul > li > input[type=text],
+form.clean_form_test > ul > li > select,
+form.clean_form_test > ul > li > textarea {
+  border: 1px solid #bfbfbf;
+}
 form.clean_form_test > ul > li input[type=checkbox], form.clean_form_test > ul > li input[type=radio] {
   margin-left: 0;
   margin-right: 0.5em;
 }
-form.clean_form_test > ul > li > input[type=text], form.clean_form_test > ul > li > input[type=password], form.clean_form_test > ul > li > textarea {
+form.clean_form_test > ul > li > input[type=password], form.clean_form_test > ul > li > input[type=text], form.clean_form_test > ul > li > textarea {
   padding: 0;
 }
