@@ -6,8 +6,7 @@ A customizable and maintainable HTML form styled with CSS using
 ## Features
 
  * Easy to use
- * Uses the least amount of HTML and CSS necessary to produce a form that is
-   styled properly
+ * Looks great
  * No creativity or hacks
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
