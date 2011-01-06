@@ -8,6 +8,7 @@ A customizable and maintainable HTML form styled with CSS using
  * Easy to use
  * Looks great
  * No creativity or hacks
+ * Compatible with [Eric Meyer Reset](http://meyerweb.com/)
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
  * `form > ul > li` HTML structure
