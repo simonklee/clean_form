@@ -29,7 +29,7 @@ A customizable and maintainable HTML form styled with CSS using
             .clean_form;
         }
 
-   Copy and paste for customizing your form.
+   Copy and paste to customize your form.
 
         form.bar {
             .clean_form(
