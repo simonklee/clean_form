@@ -23,7 +23,7 @@ form.test > ul > li > textarea,
 form.test > ul > li > ul {
   float: right;
 }
-form.test > ul > li > label {
+form.test > ul > li > div.text_left, form.test > ul > li > label {
   width: 256px;
 }
 form.test > ul > li > div.text_right, form.test > ul > li > ul {
@@ -35,13 +35,10 @@ form.test > ul > li > select,
 form.test > ul > li > textarea {
   width: 254px;
 }
-form.test > ul > li > div.text_left,
-form.test > ul > li > div.text_right,
 form.test > ul > li > input[type=password],
 form.test > ul > li > input[type=text],
 form.test > ul > li input[type=checkbox],
-form.test > ul > li input[type=radio],
-form.test > ul > li label {
+form.test > ul > li input[type=radio] {
   height: 24px;
   line-height: 24px;
 }
@@ -50,6 +47,9 @@ form.test > ul > li > textarea {
 }
 form.test > ul > li > select[multiple=multiple] {
   height: 96px;
+}
+form.test > ul > li > div.text_left, form.test > ul > li > div.text_right, form.test > ul > li label {
+  line-height: 24px;
 }
 form.test > ul > li > input[type=password],
 form.test > ul > li > input[type=text],

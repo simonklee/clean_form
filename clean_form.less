@@ -45,6 +45,7 @@
 
             // Set widths.
 
+            > div.text_left,
             > label {
                 width: @form_left_width;
             }
@@ -61,13 +62,10 @@
 
             // Set heights.
 
-            > div.text_left,
-            > div.text_right,
             > input[type=password],
             > input[type=text],
             input[type=checkbox],
-            input[type=radio],
-            label {
+            input[type=radio] {
                 height: @field_height;
                 line-height: @field_height;
             }
@@ -76,6 +74,14 @@
             }
             > select[multiple=multiple] {
                 height: @select_multiple_height;
+            }
+
+            // Set line-heights.
+
+            > div.text_left,
+            > div.text_right,
+            label {
+                line-height: @field_height;
             }
 
             // Set borders.
