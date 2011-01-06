@@ -1,5 +1,5 @@
 form.clean_form_test {
-  width: 400px;
+  width: 512px;
 }
 form.clean_form_test ul {
   list-style: none;
@@ -8,7 +8,10 @@ form.clean_form_test ul {
 form.clean_form_test > ul > li {
   margin-bottom: 24px;
 }
-form.clean_form_test > ul > li > div.text_left, form.clean_form_test > ul > li > label {
+form.clean_form_test > ul > li > div.text_left,
+form.clean_form_test > ul > li input[type=checkbox],
+form.clean_form_test > ul > li input[type=radio],
+form.clean_form_test > ul > li label {
   float: left;
 }
 form.clean_form_test > ul > li > div.text_right,
@@ -17,27 +20,27 @@ form.clean_form_test > ul > li > input[type=submit],
 form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li > select,
 form.clean_form_test > ul > li > textarea,
-form.clean_form_test > ul > li > ul {
+form.clean_form_test > ul > li ul {
   float: right;
 }
 form.clean_form_test > ul > li > label {
-  width: 200px;
+  width: 256px;
 }
-form.clean_form_test > ul > li > ul, form.clean_form_test > ul > li > div.text_right {
-  width: 200px;
+form.clean_form_test > ul > li > div.text_right, form.clean_form_test > ul > li > ul {
+  width: 256px;
 }
 form.clean_form_test > ul > li > input[type=password],
 form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li > select,
 form.clean_form_test > ul > li > textarea {
-  width: 198px;
+  width: 254px;
 }
 form.clean_form_test > ul > li > div.text_left,
 form.clean_form_test > ul > li > div.text_right,
-form.clean_form_test > ul > li > input[type=checkbox],
 form.clean_form_test > ul > li > input[type=password],
-form.clean_form_test > ul > li > input[type=radio],
 form.clean_form_test > ul > li > input[type=text],
+form.clean_form_test > ul > li input[type=checkbox],
+form.clean_form_test > ul > li input[type=radio],
 form.clean_form_test > ul > li label {
   height: 24px;
   line-height: 24px;

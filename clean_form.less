@@ -1,10 +1,7 @@
 // Modify this class.
 
 form.clean_form_test {
-    // Specify the width of the form, the width of the left and right side of
-    // the form, and use default values for the remaining arguments.
-
-    .clean_form(400px, 200px, 200px);
+    .clean_form();
 }
 
 .clean_form (
@@ -34,7 +31,9 @@ form.clean_form_test {
             // Float to the left.
 
             > div.text_left,
-            > label {
+            input[type=checkbox],
+            input[type=radio],
+            label {
                 float: left;
             }
 
@@ -46,7 +45,7 @@ form.clean_form_test {
             > input[type=text],
             > select,
             > textarea,
-            > ul {
+            ul {
                 float: right;
             }
 
@@ -55,8 +54,8 @@ form.clean_form_test {
             > label {
                 width: @form_left_width;
             }
-            > ul,
-            > div.text_right {
+            > div.text_right,
+            > ul {
                 width: @form_right_width;
             }
             > input[type=password],
@@ -70,10 +69,10 @@ form.clean_form_test {
 
             > div.text_left,
             > div.text_right,
-            > input[type=checkbox],
             > input[type=password],
-            > input[type=radio],
             > input[type=text],
+            input[type=checkbox],
+            input[type=radio],
             label {
                 height: @field_height;
                 line-height: @field_height;
