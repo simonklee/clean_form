@@ -23,14 +23,13 @@ A customizable and maintainable HTML form styled with CSS using
 
         @import url('clean_form.less');
 
-   `<form class="foo">` uses the default settings.
+   A form using the default settings.
+
         form.foo {
             .clean_form;
         }
 
-   `<form class="bar">` uses the default settings, but they are passed as
-   arguments to `.clean_form`. Copy and paste the code below if you want to
-   customize your form.
+   Copy and paste for customizing your form.
 
         form.bar {
             .clean_form(
@@ -45,7 +44,7 @@ A customizable and maintainable HTML form styled with CSS using
                 192px);     // textarea height
         }
 
-   `<form class="baz">` uses the default settings, except for the widths.
+   Set the widths, and use the default settings for the remaining arguments.
 
         form.baz {
             .clean_form(
@@ -57,8 +56,7 @@ A customizable and maintainable HTML form styled with CSS using
 3. Compile your `less`-file.
 
 4. Modify the structure of your HTML forms so that they match the one in
-   `test.html`. Add the class attribute to the form elements with the class
-   names that you’ve defined.
+   `test.html`.
 
 5. You probably also want to set the typography for all the form elements.
 
