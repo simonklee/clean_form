@@ -20,8 +20,10 @@ form.clean_form_test {
 
     width: @form_width;
 
+    // Remove bullet and margin for decendants.
+
     ul {
-        list-style-type: none;
+        list-style: none;
         padding-left: 0;
     }
 
@@ -29,9 +31,14 @@ form.clean_form_test {
         > li {
             margin-bottom: @field_margin_bottom;
 
-            > label, > div.text_left {
+            // float left
+
+            > label,
+            > div.text_left {
                 float: left;
             }
+
+            // float right
 
             > input[type=text],
             > input[type=password],
@@ -42,6 +49,8 @@ form.clean_form_test {
             > input[type=submit] {
                 float: right;
             }
+
+            // width
 
             > label {
                 width: @form_left_width;
@@ -55,6 +64,8 @@ form.clean_form_test {
                 border: @field_border_size solid @field_border_color;
                 width: @form_right_width - (@field_border_size * 2);
             }
+
+            // height
 
             label,
             > input[type=text],
@@ -73,10 +84,14 @@ form.clean_form_test {
                 height: @select_multiple_height;
             }
 
+            // margin
+
             input[type=checkbox], input[type=radio] {
                 margin-left: 0;
                 margin-right: 0.5em;
             }
+
+            // padding
 
             > input[type=text], > input[type=password], > textarea {
                 padding: 0;
