@@ -20,7 +20,7 @@ form.clean_form_test > ul > li > input[type=submit],
 form.clean_form_test > ul > li > input[type=text],
 form.clean_form_test > ul > li > select,
 form.clean_form_test > ul > li > textarea,
-form.clean_form_test > ul > li ul {
+form.clean_form_test > ul > li > ul {
   float: right;
 }
 form.clean_form_test > ul > li > label {
