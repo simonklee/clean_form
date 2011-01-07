@@ -15,6 +15,7 @@ form.test > ul > li label {
   float: left;
 }
 form.test > ul > li > div.text_right,
+form.test > ul > li > input[type=file],
 form.test > ul > li > input[type=password],
 form.test > ul > li > input[type=submit],
 form.test > ul > li > input[type=text],
@@ -25,18 +26,15 @@ form.test > ul > li > ul {
 }
 form.test > ul > li > div.text_left, form.test > ul > li > label {
   width: 248px;
-  margin-right: 8px;
 }
-form.test > ul > li > div.text_right, form.test > ul > li > ul {
+form.test > ul > li > div.text_right, form.test > ul > li > input[type=file], form.test > ul > li > ul {
   width: 248px;
-  margin-left: 8px;
 }
 form.test > ul > li > input[type=password],
 form.test > ul > li > input[type=text],
 form.test > ul > li > select,
 form.test > ul > li > textarea {
   width: 246px;
-  margin-left: 8px;
 }
 form.test > ul > li > input[type=password],
 form.test > ul > li > input[type=text],
