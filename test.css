@@ -8,74 +8,70 @@ form.test ul {
 form.test > ul > li {
   margin-bottom: 16px;
 }
-form.test > ul > li > div.text_left,
-form.test > ul > li input[type=checkbox],
-form.test > ul > li input[type=radio],
-form.test > ul > li label {
+form.test > ul > li > div.text_left {
   float: left;
+  line-height: 24px;
+  width: 248px;
 }
-form.test > ul > li > div.text_right,
-form.test > ul > li > input[type=file],
-form.test > ul > li > input[type=password],
-form.test > ul > li > input[type=submit],
-form.test > ul > li > input[type=text],
-form.test > ul > li > select,
-form.test > ul > li > textarea,
-form.test > ul > li > ul {
+form.test > ul > li > div.text_right {
   float: right;
-}
-form.test > ul > li > div.text_left, form.test > ul > li > label {
+  line-height: 24px;
+  margin-left: 8px;
   width: 248px;
 }
-form.test > ul > li > div.text_right, form.test > ul > li > input[type=file], form.test > ul > li > ul {
-  width: 248px;
-}
-form.test > ul > li > input[type=password],
-form.test > ul > li > input[type=text],
-form.test > ul > li > select,
-form.test > ul > li > textarea {
-  width: 246px;
-}
-form.test > ul > li > input[type=password],
-form.test > ul > li > input[type=text],
-form.test > ul > li input[type=checkbox],
-form.test > ul > li input[type=radio] {
+form.test > ul > li > input[type=password], form.test > ul > li > input[type=text] {
+  border: 1px solid #dfdfdf;
   height: 24px;
   line-height: 24px;
+  margin-left: 8px;
+  padding: 0;
+  width: 246px;
 }
 form.test > ul > li > textarea {
+  border: 1px solid #dfdfdf;
+  float: right;
   height: 192px;
+  margin-left: 8px;
+  padding: 0;
+  width: 246px;
+}
+form.test > ul > li input[type=checkbox], form.test > ul > li input[type=radio] {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 0.5em 0 0;
+}
+form.test > ul > li > input[type=checkbox] {
+  margin-left: 8px;
+}
+form.test > ul > li label {
+  float: left;
+  line-height: 24px;
+  margin-right: 8px;
+  width: 248px;
+}
+form.test > ul > li > input[type=file] {
+  float: right;
+  margin: 0;
+  width: 248px;
+}
+form.test > ul > li > input[type=submit] {
+  float: right;
+  margin: 0;
+}
+form.test > ul > li > ul {
+  float: right;
+  margin-left: 8px;
+  margin-left: 8px;
+  width: 248px;
+}
+form.test > ul > li > select {
+  border: 1px solid #dfdfdf;
+  float: right;
+  margin-left: 8px;
+  margin: 0;
+  width: 246px;
 }
 form.test > ul > li > select[multiple=multiple] {
   height: 96px;
-}
-form.test > ul > li > div.text_left, form.test > ul > li > div.text_right, form.test > ul > li label {
-  line-height: 24px;
-}
-form.test > ul > li > input[type=password],
-form.test > ul > li > input[type=text],
-form.test > ul > li > select,
-form.test > ul > li > textarea {
-  border: 1px solid #dfdfdf;
-}
-form.test > ul > li input[type=file], form.test > ul > li input[type=submit], form.test > ul > li select {
-  margin: 0;
-}
-form.test > ul > li input[type=checkbox], form.test > ul > li input[type=radio] {
-  margin: 0 0.5em 0 0;
-}
-form.test > ul > li > div.text_left, form.test > ul > li > label {
-  margin-right: 8px;
-}
-form.test > ul > li > div.text_right,
-form.test > ul > li > input[type=checkbox],
-form.test > ul > li > input[type=password],
-form.test > ul > li > input[type=text],
-form.test > ul > li > select,
-form.test > ul > li > textarea,
-form.test > ul > li > ul {
-  margin-left: 8px;
-}
-form.test > ul > li > input[type=password], form.test > ul > li > input[type=text], form.test > ul > li > textarea {
-  padding: 0;
 }

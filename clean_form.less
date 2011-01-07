@@ -12,8 +12,6 @@
 
     width: @form_width;
 
-    // Set style of decendants.
-
     ul {
         list-style: none;
         padding-left: 0;
@@ -22,113 +20,85 @@
     > ul > li {
         margin-bottom: @li_margin_bottom;
 
-        // Float to the left.
-
-        > div.text_left,
-        input[type=checkbox],
-        input[type=radio],
         label {
             float: left;
-        }
-
-        // Float to the right.
-
-        > div.text_right,
-        > input[type=file],
-        > input[type=password],
-        > input[type=submit],
-        > input[type=text],
-        > select,
-        > textarea,
-        > ul {
-            float: right;
-        }
-
-        // Set widths.
-
-        > div.text_left,
-        > label {
+            line-height: @input_height;
+            margin-right: @gutter_width / 2;
             width: @form_left_width - @gutter_width / 2;
         }
-        > div.text_right,
-        > input[type=file],
-        > ul {
-            width: @form_right_width - @gutter_width / 2;
-        }
+
         > input[type=password],
-        > input[type=text],
-        > select,
-        > textarea {
+        > input[type=text] {
+            border: @input_border_size solid @input_border_color;
+            height: @input_height;
+            line-height: @input_height;
+            margin-left: @gutter_width / 2;
+            padding: 0;
             width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
         }
 
-        // Set heights.
+        > textarea {
+            border: @input_border_size solid @input_border_color;
+            float: right;
+            height: @textarea_height;
+            margin-left: @gutter_width / 2;
+            padding: 0;
+            width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
+        }
 
-        > input[type=password],
-        > input[type=text],
+        > div.text_left {
+            float: left;
+            line-height: @input_height;
+            width: @form_left_width - @gutter_width / 2;
+        }
+
+        > div.text_right {
+            float: right;
+            line-height: @input_height;
+            margin-left: @gutter_width / 2;
+            width: @form_right_width - @gutter_width / 2;
+        }
+
         input[type=checkbox],
         input[type=radio] {
+            float: left;
             height: @input_height;
             line-height: @input_height;
+            margin: 0 0.5em 0 0;
         }
-        > textarea {
-            height: @textarea_height;
+
+        > input[type=checkbox] {
+            margin-left: @gutter_width / 2;
         }
+
+        > ul {
+            float: right;
+            margin-left: @gutter_width / 2;
+            margin-left: @gutter_width / 2;
+            width: @form_right_width - @gutter_width / 2;
+        }
+
+        > select {
+            border: @input_border_size solid @input_border_color;
+            float: right;
+            margin-left: @gutter_width / 2;
+            margin: 0;
+            width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
+        }
+
         > select[multiple=multiple] {
             height: @select_multiple_height;
         }
 
-        // Set line-heights.
-
-        > div.text_left,
-        > div.text_right,
-        label {
-            line-height: @input_height;
-        }
-
-        // Set borders.
-
-        > input[type=password],
-        > input[type=text],
-        > select,
-        > textarea {
-            border: @input_border_size solid @input_border_color;
-        }
-
-        // Set margins.
-
-        input[type=file],
-        input[type=submit],
-        select {
+        > input[type=file] {
+            float: right;
             margin: 0;
-        }
-        input[type=checkbox],
-        input[type=radio] {
-            margin: 0 0.5em 0 0;
+            width: @form_right_width - @gutter_width / 2;
         }
 
-        // Set gutter widths.
-
-        > div.text_left,
-        > label {
-            margin-right: @gutter_width / 2;
-        }
-        > div.text_right,
-        > input[type=checkbox],
-        > input[type=password],
-        > input[type=text],
-        > select,
-        > textarea,
-        > ul {
-            margin-left: @gutter_width / 2;
-        }
-
-        // Set paddings.
-
-        > input[type=password],
-        > input[type=text],
-        > textarea {
-            padding: 0;
+        > input[type=submit] {
+            float: right;
+            margin: 0;
         }
     }
 }
