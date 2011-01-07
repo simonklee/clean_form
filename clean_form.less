@@ -20,7 +20,7 @@
     > ul > li {
         margin-bottom: @li_margin_bottom;
 
-        label {
+        > label {
             float: left;
             line-height: @input_height;
             margin-right: @gutter_width / 2;
@@ -35,7 +35,7 @@
             line-height: @input_height;
             margin-left: @gutter_width / 2;
             padding: 0;
-            width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
+            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
         }
 
         > textarea {
@@ -44,7 +44,7 @@
             height: @textarea_height;
             margin-left: @gutter_width / 2;
             padding: 0;
-            width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
+            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
         }
 
         > div.text_left {
@@ -74,16 +74,20 @@
 
         > ul {
             float: right;
-            margin-left: @gutter_width / 2;
-            width: @form_right_width - @gutter_width / 2;
+
+            > li > label {
+                float: left;
+                line-height: @input_height;
+                margin-left: @gutter_width / 2;
+                width: @form_right_width - @gutter_width / 2;
+            }
         }
 
         > select {
             border: @input_border_size solid @input_border_color;
             float: right;
-            margin-left: @gutter_width / 2;
-            margin: 0;
-            width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
+            margin: 0 0 0 @gutter_width / 2;
+            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
         }
 
         > select[multiple=multiple] {
@@ -91,14 +95,14 @@
         }
 
         > input[type=file] {
-            float: right;
-            margin: 0;
-            width: @form_right_width - @gutter_width / 2;
+            float: left;
+            margin: 0 0 0 @gutter_width / 2;
+            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
         }
 
         > input[type=submit] {
-            float: right;
-            margin: 0;
+            float: left;
+            margin: 0 0 0 @gutter_width / 2;
         }
     }
 }
