@@ -20,11 +20,19 @@
     > ul > li {
         margin-bottom: @li_margin_bottom;
 
+        > div.text_left,
         > label {
             float: left;
             line-height: @input_height;
             margin-right: @gutter_width / 2;
             width: @form_left_width - @gutter_width / 2;
+        }
+
+        > div.text_right {
+            float: right;
+            line-height: @input_height;
+            margin-left: @gutter_width / 2;
+            width: @form_right_width - @gutter_width / 2;
         }
 
         > input[type=password],
@@ -45,19 +53,6 @@
             margin-left: @gutter_width / 2;
             padding: 0;
             width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
-        }
-
-        > div.text_left {
-            float: left;
-            line-height: @input_height;
-            width: @form_left_width - @gutter_width / 2;
-        }
-
-        > div.text_right {
-            float: right;
-            line-height: @input_height;
-            margin-left: @gutter_width / 2;
-            width: @form_right_width - @gutter_width / 2;
         }
 
         input[type=checkbox],

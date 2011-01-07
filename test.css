@@ -8,10 +8,16 @@ form.test ul {
 form.test > ul > li {
   margin-bottom: 16px;
 }
-form.test > ul > li > label {
+form.test > ul > li > div.text_left, form.test > ul > li > label {
   float: left;
   line-height: 24px;
   margin-right: 8px;
+  width: 248px;
+}
+form.test > ul > li > div.text_right {
+  float: right;
+  line-height: 24px;
+  margin-left: 8px;
   width: 248px;
 }
 form.test > ul > li > input[type=password], form.test > ul > li > input[type=text] {
@@ -30,17 +36,6 @@ form.test > ul > li > textarea {
   margin-left: 8px;
   padding: 0;
   width: 246px;
-}
-form.test > ul > li > div.text_left {
-  float: left;
-  line-height: 24px;
-  width: 248px;
-}
-form.test > ul > li > div.text_right {
-  float: right;
-  line-height: 24px;
-  margin-left: 8px;
-  width: 248px;
 }
 form.test > ul > li input[type=checkbox], form.test > ul > li input[type=radio] {
   float: left;
