@@ -12,125 +12,123 @@
 
     width: @form_width;
 
-    // Reset style of decendants.
+    // Set style of decendants.
 
     ul {
         list-style: none;
         padding-left: 0;
     }
 
-    > ul {
-        > li {
-            margin-bottom: @li_margin_bottom;
+    > ul > li {
+        margin-bottom: @li_margin_bottom;
 
-            // Float to the left.
+        // Float to the left.
 
-            > div.text_left,
-            input[type=checkbox],
-            input[type=radio],
-            label {
-                float: left;
-            }
+        > div.text_left,
+        input[type=checkbox],
+        input[type=radio],
+        label {
+            float: left;
+        }
 
-            // Float to the right.
+        // Float to the right.
 
-            > div.text_right,
-            > input[type=file],
-            > input[type=password],
-            > input[type=submit],
-            > input[type=text],
-            > select,
-            > textarea,
-            > ul {
-                float: right;
-            }
+        > div.text_right,
+        > input[type=file],
+        > input[type=password],
+        > input[type=submit],
+        > input[type=text],
+        > select,
+        > textarea,
+        > ul {
+            float: right;
+        }
 
-            // Set widths.
+        // Set widths.
 
-            > div.text_left,
-            > label {
-                width: @form_left_width - @gutter_width / 2;
-            }
-            > div.text_right,
-            > input[type=file],
-            > ul {
-                width: @form_right_width - @gutter_width / 2;
-            }
-            > input[type=password],
-            > input[type=text],
-            > select,
-            > textarea {
-                width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
-            }
+        > div.text_left,
+        > label {
+            width: @form_left_width - @gutter_width / 2;
+        }
+        > div.text_right,
+        > input[type=file],
+        > ul {
+            width: @form_right_width - @gutter_width / 2;
+        }
+        > input[type=password],
+        > input[type=text],
+        > select,
+        > textarea {
+            width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
+        }
 
-            // Set heights.
+        // Set heights.
 
-            > input[type=password],
-            > input[type=text],
-            input[type=checkbox],
-            input[type=radio] {
-                height: @input_height;
-                line-height: @input_height;
-            }
-            > textarea {
-                height: @textarea_height;
-            }
-            > select[multiple=multiple] {
-                height: @select_multiple_height;
-            }
+        > input[type=password],
+        > input[type=text],
+        input[type=checkbox],
+        input[type=radio] {
+            height: @input_height;
+            line-height: @input_height;
+        }
+        > textarea {
+            height: @textarea_height;
+        }
+        > select[multiple=multiple] {
+            height: @select_multiple_height;
+        }
 
-            // Set line-heights.
+        // Set line-heights.
 
-            > div.text_left,
-            > div.text_right,
-            label {
-                line-height: @input_height;
-            }
+        > div.text_left,
+        > div.text_right,
+        label {
+            line-height: @input_height;
+        }
 
-            // Set borders.
+        // Set borders.
 
-            > input[type=password],
-            > input[type=text],
-            > select,
-            > textarea {
-                border: @input_border_size solid @input_border_color;
-            }
+        > input[type=password],
+        > input[type=text],
+        > select,
+        > textarea {
+            border: @input_border_size solid @input_border_color;
+        }
 
-            // Set margins.
+        // Set margins.
 
-            input[type=file],
-            input[type=submit],
-            select {
-                margin: 0;
-            }
-            input[type=checkbox],
-            input[type=radio] {
-                margin: 0 0.5em 0 0;
-            }
+        input[type=file],
+        input[type=submit],
+        select {
+            margin: 0;
+        }
+        input[type=checkbox],
+        input[type=radio] {
+            margin: 0 0.5em 0 0;
+        }
 
-            // Set gutter widths.
+        // Set gutter widths.
 
-            > div.text_left,
-            > label {
-                margin-right: @gutter_width / 2;
-            }
-            > div.text_right,
-            > input[type=checkbox],
-            > input[type=password],
-            > input[type=text],
-            > select,
-            > textarea,
-            > ul {
-                margin-left: @gutter_width / 2;
-            }
+        > div.text_left,
+        > label {
+            margin-right: @gutter_width / 2;
+        }
+        > div.text_right,
+        > input[type=checkbox],
+        > input[type=password],
+        > input[type=text],
+        > select,
+        > textarea,
+        > ul {
+            margin-left: @gutter_width / 2;
+        }
 
-            // Set paddings.
+        // Set paddings.
 
-            > input[type=password],
-            > input[type=text],
-            > textarea {
-                padding: 0;
-            }
+        > input[type=password],
+        > input[type=text],
+        > textarea {
+            padding: 0;
         }
     }
 }
