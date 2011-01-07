@@ -29,34 +29,36 @@ A customizable and maintainable HTML form styled with CSS using
 
         @import url('clean_form.less');
 
-   A form using the default settings.
+   This is the definition of a form using the default settings.
 
         form.foo {
             .clean_form;
         }
 
-   Copy and paste to customize your form.
+   However, you might want to define a customized form.
 
         form.bar {
             .clean_form(
-                512px,      // form width
-                256px,      // left side of form width
-                256px,      // right side of form width
-                #dfdfdf,    // field border-color
-                1px,        // field border-size
-                24px,       // field height
-                24px,       // field margin-bottom
-                96px,       // multiple select height
-                192px);     // textarea height
+                512px,      // form_width
+                256px,      // form_left_width
+                256px,      // form_right_width
+                24px,       // li_margin_bottom
+                16px,       // gutter_width
+                #dfdfdf,    // input_border_color
+                1px,        // input_border_size
+                24px,       // input_height
+                192px,      // textarea_height
+                96px);      // select_multiple_height
         }
 
-   Set the widths, and use the default settings for the remaining arguments.
+   It’s possible to set as many arguments that you like and use the default
+   settings for the remaining arguments.
 
         form.baz {
             .clean_form(
-                1024px,     // form width
-                512px,      // left side of form width
-                512px);     // right side of form width
+                1024px,     // form_width
+                512px,      // form_left_width
+                512px);     // form_right_width
         }
 
 3. Compile your `less`-file.

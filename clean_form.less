@@ -2,12 +2,13 @@
     @form_width: 512px,
     @form_left_width: 256px,
     @form_right_width: 256px,
-    @field_border_color: #dfdfdf,
-    @field_border_size: 1px,
-    @field_height: 24px,
-    @field_margin_bottom: 24px,
-    @select_multiple_height: 96px,
-    @textarea_height: 192px) {
+    @li_margin_bottom: 16px,
+    @gutter_width: 16px,
+    @input_border_color: #dfdfdf,
+    @input_border_size: 1px,
+    @input_height: 24px,
+    @textarea_height: 192px,
+    @select_multiple_height: 96px) {
 
     width: @form_width;
 
@@ -20,7 +21,7 @@
 
     > ul {
         > li {
-            margin-bottom: @field_margin_bottom;
+            margin-bottom: @li_margin_bottom;
 
             // Float to the left.
 
@@ -47,17 +48,20 @@
 
             > div.text_left,
             > label {
-                width: @form_left_width;
+                width: @form_left_width - @gutter_width / 2;
+                margin-right: @gutter_width / 2;
             }
             > div.text_right,
             > ul {
-                width: @form_right_width;
+                width: @form_right_width - @gutter_width / 2;
+                margin-left: @gutter_width / 2;
             }
             > input[type=password],
             > input[type=text],
             > select,
             > textarea {
-                width: @form_right_width - (@field_border_size * 2);
+                width: @form_right_width - (@input_border_size * 2) - @gutter_width / 2;
+                margin-left: @gutter_width / 2;
             }
 
             // Set heights.
@@ -66,8 +70,8 @@
             > input[type=text],
             input[type=checkbox],
             input[type=radio] {
-                height: @field_height;
-                line-height: @field_height;
+                height: @input_height;
+                line-height: @input_height;
             }
             > textarea {
                 height: @textarea_height;
@@ -81,7 +85,7 @@
             > div.text_left,
             > div.text_right,
             label {
-                line-height: @field_height;
+                line-height: @input_height;
             }
 
             // Set borders.
@@ -90,7 +94,7 @@
             > input[type=text],
             > select,
             > textarea {
-                border: @field_border_size solid @field_border_color;
+                border: @input_border_size solid @input_border_color;
             }
 
             // Set margins.
@@ -98,6 +102,22 @@
             input[type=checkbox],
             input[type=radio] {
                 margin: 0 0.5em 0 0;
+            }
+
+            // Set gutter widths.
+
+            > div.text_left,
+            > label {
+                margin-right: @gutter_width / 2;
+            }
+            > div.text_right,
+            > input[type=checkbox],
+            > input[type=password],
+            > input[type=text],
+            > select,
+            > textarea,
+            > ul {
+                margin-left: @gutter_width / 2;
             }
 
             // Set paddings.
