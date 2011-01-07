@@ -58,6 +58,9 @@ form.test > ul > li > select,
 form.test > ul > li > textarea {
   border: 1px solid #dfdfdf;
 }
+form.test > ul > li input[type=file], form.test > ul > li input[type=submit], form.test > ul > li select {
+  margin: 0;
+}
 form.test > ul > li input[type=checkbox], form.test > ul > li input[type=radio] {
   margin: 0 0.5em 0 0;
 }
