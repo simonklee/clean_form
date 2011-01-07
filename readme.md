@@ -42,7 +42,7 @@ A customizable and maintainable HTML form styled with CSS using
                 512px,      // form_width
                 256px,      // form_left_width
                 256px,      // form_right_width
-                24px,       // li_margin_bottom
+                16px,       // li_margin_bottom
                 16px,       // gutter_width
                 #dfdfdf,    // input_border_color
                 1px,        // input_border_size
