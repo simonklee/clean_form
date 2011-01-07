@@ -5,19 +5,13 @@ A customizable two column HTML form styled with CSS using
 
 ## Features
 
- * Easy to use
- * Looks great
- * No creativity or hacks
+ * `form > ul > li` HTML structure
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
- * `form > ul > li` HTML structure
  * Validates as HTML5
-
-## Compatibility
-
- * All modern browsers
- * Internet Explorer 7 optionally
- * [Eric Meyer Reset](http://meyerweb.com/)
+ * Renders correctly in all major browsers
+ * Internet Explorer 7 support is optional
+ * Compatible with [Eric Meyer Reset](http://meyerweb.com/)
 
 ## Setup
 
