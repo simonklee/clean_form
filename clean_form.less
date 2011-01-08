@@ -1,4 +1,5 @@
 .clean_form(
+    @label_align: left,
     @form_width: 512px,
     @form_left_width: 256px,
     @form_right_width: 256px,
@@ -14,6 +15,10 @@
 
     > div {
         margin-bottom: @element_margin_bottom;
+
+        > label {
+            text-align: @label_align;
+        }
 
         > div.left,
         > label {

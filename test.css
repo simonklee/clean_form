@@ -4,6 +4,9 @@ form.test {
 form.test > div {
   margin-bottom: 16px;
 }
+form.test > div > label {
+  text-align: right;
+}
 form.test > div > div.left, form.test > div > label {
   float: left;
   line-height: 24px;

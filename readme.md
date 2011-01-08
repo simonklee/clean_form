@@ -7,6 +7,7 @@ A customizable two column HTML form styled with CSS using
 
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
+ * Left and right aligned labels are supported
  * Validates as HTML5
  * Internet Explorer 7 support is optional
  * Compatible with [Eric Meyer Reset](http://meyerweb.com/)
@@ -31,6 +32,7 @@ A customizable two column HTML form styled with CSS using
 
         form.bar {
             .clean_form(
+                left,       // label_align
                 512px,      // form_width
                 256px,      // form_left_width
                 256px,      // form_right_width
@@ -48,6 +50,7 @@ A customizable two column HTML form styled with CSS using
 
         form.baz {
             .clean_form(
+                left,       // label_align
                 1024px,     // form_width
                 512px,      // form_left_width
                 512px);     // form_right_width
