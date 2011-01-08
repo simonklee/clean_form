@@ -1,7 +1,7 @@
 # clean_form
 
-A customizable two column HTML form styled with CSS using
-[less.js](https://github.com/cloudhead/less.js/).
+A flexible [less.js](https://github.com/cloudhead/less.js/) mixin for styling a two column HTML form.
+
 
 ## Features
 
