@@ -8,9 +8,9 @@ A flexible [less.js](https://github.com/cloudhead/less.js/) mixin for styling a 
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
  * Left and right aligned labels are supported
- * Validates as HTML5
  * Internet Explorer 7 support is optional
  * Compatible with [Eric Meyer Reset](http://meyerweb.com/)
+ * Test validates as HTML5
 
 ## Setup
 
