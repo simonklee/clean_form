@@ -1,4 +1,4 @@
-form > ul > li {
+form > div {
     float: left;
     display: inline-block;
 }
