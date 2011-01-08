@@ -1,26 +1,22 @@
 form.test {
   width: 512px;
 }
-form.test ul {
-  list-style: none;
-  padding-left: 0;
-}
-form.test > ul > li {
+form.test > div {
   margin-bottom: 16px;
 }
-form.test > ul > li > div.left, form.test > ul > li > label {
+form.test > div > div.left, form.test > div > label {
   float: left;
   line-height: 24px;
   margin-right: 8px;
   width: 248px;
 }
-form.test > ul > li > div.right {
+form.test > div > div.right {
   float: right;
   line-height: 24px;
   margin-left: 8px;
   width: 248px;
 }
-form.test > ul > li > input[type=password], form.test > ul > li > input[type=text] {
+form.test > div > input[type=password], form.test > div > input[type=text] {
   border: 1px solid #dfdfdf;
   float: right;
   height: 24px;
@@ -29,7 +25,7 @@ form.test > ul > li > input[type=password], form.test > ul > li > input[type=tex
   padding: 0;
   width: 246px;
 }
-form.test > ul > li > textarea {
+form.test > div > textarea {
   border: 1px solid #dfdfdf;
   float: right;
   height: 192px;
@@ -37,39 +33,42 @@ form.test > ul > li > textarea {
   padding: 0;
   width: 246px;
 }
-form.test > ul > li input[type=checkbox], form.test > ul > li input[type=radio] {
+form.test > div input[type=checkbox], form.test > div input[type=radio] {
   float: left;
   height: 24px;
   line-height: 24px;
   margin: 0 0.5em 0 0;
 }
-form.test > ul > li > input[type=checkbox] {
+form.test > div > input[type=checkbox] {
   margin-left: 8px;
 }
-form.test > ul > li > ul {
+form.test > div > ul {
   float: right;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
-form.test > ul > li > ul > li > label {
+form.test > div > ul > li > label {
   float: left;
   line-height: 24px;
   margin-left: 8px;
   width: 248px;
 }
-form.test > ul > li > select {
+form.test > div > select {
   border: 1px solid #dfdfdf;
   float: right;
   margin: 0 0 0 8px;
   width: 246px;
 }
-form.test > ul > li > select[multiple=multiple] {
+form.test > div > select[multiple=multiple] {
   height: 96px;
 }
-form.test > ul > li > input[type=file] {
+form.test > div > input[type=file] {
   float: left;
   margin: 0 0 0 8px;
   width: 246px;
 }
-form.test > ul > li > input[type=submit] {
+form.test > div > input[type=submit] {
   float: right;
   margin: 0 0 0 8px;
 }

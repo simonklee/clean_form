@@ -2,8 +2,8 @@
     @form_width: 512px,
     @form_left_width: 256px,
     @form_right_width: 256px,
-    @li_margin_bottom: 16px,
     @gutter_width: 16px,
+    @element_margin_bottom: 16px,
     @element_border_color: #dfdfdf,
     @element_border_size: 1px,
     @element_height: 24px,
@@ -12,13 +12,8 @@
 
     width: @form_width;
 
-    ul {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    > ul > li {
-        margin-bottom: @li_margin_bottom;
+    > div {
+        margin-bottom: @element_margin_bottom;
 
         > div.left,
         > label {
@@ -69,6 +64,9 @@
 
         > ul {
             float: right;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
 
             > li > label {
                 float: left;
