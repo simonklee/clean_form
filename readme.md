@@ -8,8 +8,8 @@ A customizable two column HTML form styled with CSS using
  * `form > ul > li` HTML structure
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
- * Validates as HTML5
  * Renders correctly in all major browsers
+ * Validates as HTML5
  * Internet Explorer 7 support is optional
  * Compatible with [Eric Meyer Reset](http://meyerweb.com/)
 
@@ -38,9 +38,9 @@ A customizable two column HTML form styled with CSS using
                 256px,      // form_right_width
                 16px,       // li_margin_bottom
                 16px,       // gutter_width
-                #dfdfdf,    // input_border_color
-                1px,        // input_border_size
-                24px,       // input_height
+                #dfdfdf,    // element_border_color
+                1px,        // element_border_size
+                24px,       // element_height
                 192px,      // textarea_height
                 96px);      // select_multiple_height
         }

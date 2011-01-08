@@ -4,9 +4,9 @@
     @form_right_width: 256px,
     @li_margin_bottom: 16px,
     @gutter_width: 16px,
-    @input_border_color: #dfdfdf,
-    @input_border_size: 1px,
-    @input_height: 24px,
+    @element_border_color: #dfdfdf,
+    @element_border_size: 1px,
+    @element_height: 24px,
     @textarea_height: 192px,
     @select_multiple_height: 96px) {
 
@@ -23,43 +23,43 @@
         > div.left,
         > label {
             float: left;
-            line-height: @input_height;
+            line-height: @element_height;
             margin-right: @gutter_width / 2;
             width: @form_left_width - @gutter_width / 2;
         }
 
         > div.right {
             float: right;
-            line-height: @input_height;
+            line-height: @element_height;
             margin-left: @gutter_width / 2;
             width: @form_right_width - @gutter_width / 2;
         }
 
         > input[type=password],
         > input[type=text] {
-            border: @input_border_size solid @input_border_color;
+            border: @element_border_size solid @element_border_color;
             float: right;
-            height: @input_height;
-            line-height: @input_height;
+            height: @element_height;
+            line-height: @element_height;
             margin-left: @gutter_width / 2;
             padding: 0;
-            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
+            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
         }
 
         > textarea {
-            border: @input_border_size solid @input_border_color;
+            border: @element_border_size solid @element_border_color;
             float: right;
             height: @textarea_height;
             margin-left: @gutter_width / 2;
             padding: 0;
-            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
+            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
         }
 
         input[type=checkbox],
         input[type=radio] {
             float: left;
-            height: @input_height;
-            line-height: @input_height;
+            height: @element_height;
+            line-height: @element_height;
             margin: 0 0.5em 0 0;
         }
 
@@ -72,17 +72,17 @@
 
             > li > label {
                 float: left;
-                line-height: @input_height;
+                line-height: @element_height;
                 margin-left: @gutter_width / 2;
                 width: @form_right_width - @gutter_width / 2;
             }
         }
 
         > select {
-            border: @input_border_size solid @input_border_color;
+            border: @element_border_size solid @element_border_color;
             float: right;
             margin: 0 0 0 @gutter_width / 2;
-            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
+            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
         }
 
         > select[multiple=multiple] {
@@ -92,7 +92,7 @@
         > input[type=file] {
             float: left;
             margin: 0 0 0 @gutter_width / 2;
-            width: @form_right_width - @input_border_size * 2 - @gutter_width / 2;
+            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
         }
 
         > input[type=submit] {
