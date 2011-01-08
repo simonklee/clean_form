@@ -1,6 +1,6 @@
 # clean_form
 
-A flexible [less.js](https://github.com/cloudhead/less.js/) mixin for styling a two column HTML form.
+A flexible [less.js](https://github.com/cloudhead/less.js/) mixin for styling two column HTML forms.
 
 
 ## Features
