@@ -5,6 +5,7 @@ A flexible [less.js](https://github.com/cloudhead/less.js/) mixin for styling tw
 
 ## Features
 
+ * No hacks or creativity
  * Fields that receive text are styled with a thin border
  * Buttons render natively on all platforms
  * Left and right aligned labels are supported
