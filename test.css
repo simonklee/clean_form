@@ -71,7 +71,7 @@ form.test > div > input[type=file] {
   margin: 0 0 0 8px;
   width: 246px;
 }
-form.test > div > input[type=submit] {
+form.test > div > input[type=button], form.test > div > input[type=submit] {
   float: right;
   margin: 0 0 0 8px;
 }
