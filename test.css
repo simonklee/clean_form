@@ -75,3 +75,9 @@ form.test > div > input[type=button], form.test > div > input[type=submit] {
   float: right;
   margin: 0 0 0 8px;
 }
+body,
+input,
+select,
+textarea {
+  font: 16px/1.5 sans-serif;
+}
