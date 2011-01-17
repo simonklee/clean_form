@@ -39,7 +39,7 @@ A flexible [less.js](https://github.com/cloudhead/less.js/) mixin for styling tw
                 256px,      // form_right_width
                 16px,       // gutter_width
                 16px,       // element_margin_bottom
-                #dfdfdf,    // element_border_color
+                #bfbfbf,    // element_border_color
                 1px,        // element_border_size
                 24px,       // element_height
                 192px,      // textarea_height
