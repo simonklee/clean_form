@@ -15,25 +15,22 @@ Style HTML forms with less.js.
        }
 
        form.bar {
-           @cf_label_align:            left;
-           @cf_form_width:             512px;
-           @cf_form_left_width:        256px;
-           @cf_form_right_width:       256px;
-           @cf_gutter_width:           16px;
-           @cf_element_margin_bottom:  16px;
-           @cf_element_border_color:   #bfbfbf;
-           @cf_element_border_size:    1px;
-           @cf_element_height:         24px;
-           @cf_textarea_height:        192px;
-           @cf_select_multiple_height: 96px;
-
-           .clean_form;
+           .clean_form(
+               left,    // label_align
+               512px,   // form_width
+               256px,   // form_left_width
+               256px,   // form_right_width
+               16px,    // gutter_width
+               16px,    // element_margin_bottom
+               #bfbfbf, // element_border_color
+               1px,     // element_border_size
+               24px,    // element_height
+               192px,   // textarea_height
+               96px);   // select_multiple_height
        }
 
        form.baz {
-           @cf_label_align:            right;
-
-           .clean_form;
+           .clean_form(right);
        }
 
 3. Compile. E.g. `lessc test.less test.css`.
@@ -59,24 +56,22 @@ Style HTML forms with less.js.
 ### Error text
 
     form {
-        @cf_error_background_color: #ffefef;
-        @cf_error_color:            #bf0000;
-        @cf_error_margin_top:       -8px;
-        @cf_error_margin_bottom:    8px;
-
         .clean_form;
-        .clean_form_error;
+        .clean_form_error(
+            #ffefef, // error_background_color
+            #bf0000, // error_color
+            -8px,    // error_margin_top
+            8px);    // error_margin_bottom
     }
 
 ### Help text
 
     form {
-        @cf_help_color:             #7f7f7f;
-        @cf_help_margin_top:        -8px;
-        @cf_help_margin_bottom:     8px;
-
         .clean_form;
-        .clean_form_help;
+        .clean_form_help(
+            #7f7f7f, // help_color
+            -8px,    // help_margin_top
+            8px);    // help_margin_bottom
     }
 
 ### Date
@@ -87,7 +82,12 @@ Style HTML forms with less.js.
         @cf_date_element_margin:   8px;
 
         .clean_form;
-        .clean_form_date;
+        .clean_form_date(
+            256px, // form_right_width
+            16px,  // gutter_width
+            48px,  // date_date_width
+            64px,  // date_year_width
+            8px);  // date_element_margin
     }
 
 ## License

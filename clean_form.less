@@ -1,79 +1,66 @@
-@cf_label_align:            left;
-@cf_form_width:             512px;
-@cf_form_left_width:        256px;
-@cf_form_right_width:       256px;
-@cf_gutter_width:           16px;
-@cf_element_margin_bottom:  16px;
-@cf_element_border_color:   #bfbfbf;
-@cf_element_border_size:    1px;
-@cf_element_height:         24px;
-@cf_textarea_height:        192px;
-@cf_select_multiple_height: 96px;
+.clean_form(
+    @label_align:            left,
+    @form_width:             512px,
+    @form_left_width:        256px,
+    @form_right_width:       256px,
+    @gutter_width:           16px,
+    @element_margin_bottom:  16px,
+    @element_border_color:   #bfbfbf,
+    @element_border_size:    1px,
+    @element_height:         24px,
+    @textarea_height:        192px,
+    @select_multiple_height: 96px) {
 
-@cf_error_background_color: #ffefef;
-@cf_error_color:            #bf0000;
-@cf_error_margin_top:       -8px;
-@cf_error_margin_bottom:    8px;
-
-@cf_help_color:             #7f7f7f;
-@cf_help_margin_top:        -8px;
-@cf_help_margin_bottom:     8px;
-
-@cf_date_date_width:       48px;
-@cf_date_year_width:       64px;
-@cf_date_element_margin:   8px;
-
-.clean_form {
-    width: @cf_form_width;
+    width: @form_width;
 
     > div {
-        margin-bottom: @cf_element_margin_bottom;
+        margin-bottom: @element_margin_bottom;
 
         > label {
-            text-align: @cf_label_align;
+            text-align: @label_align;
         }
 
         > div.left,
         > label {
             float: left;
-            margin-right: @cf_gutter_width / 2;
-            width: @cf_form_left_width - @cf_gutter_width / 2;
+            margin-right: @gutter_width / 2;
+            width: @form_left_width - @gutter_width / 2;
         }
 
         > div.right {
             float: right;
-            margin-left: @cf_gutter_width / 2;
-            width: @cf_form_right_width - @cf_gutter_width / 2;
+            margin-left: @gutter_width / 2;
+            width: @form_right_width - @gutter_width / 2;
         }
 
         > input[type=password],
         > input[type=text] {
-            border: @cf_element_border_size solid @cf_element_border_color;
+            border: @element_border_size solid @element_border_color;
             float: right;
-            height: @cf_element_height;
-            margin-left: @cf_gutter_width / 2;
+            height: @element_height;
+            margin-left: @gutter_width / 2;
             padding: 0;
-            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
+            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
         }
 
         > textarea {
-            border: @cf_element_border_size solid @cf_element_border_color;
+            border: @element_border_size solid @element_border_color;
             float: right;
-            height: @cf_textarea_height;
-            margin-left: @cf_gutter_width / 2;
+            height: @textarea_height;
+            margin-left: @gutter_width / 2;
             padding: 0;
-            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
+            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
         }
 
         input[type=checkbox],
         input[type=radio] {
             float: left;
-            height: @cf_element_height;
+            height: @element_height;
             margin: 0 0.5em 0 0;
         }
 
         > input[type=checkbox] {
-            margin-left: @cf_gutter_width / 2;
+            margin-left: @gutter_width / 2;
         }
 
         > ul {
@@ -84,42 +71,47 @@
 
             > li > label {
                 float: left;
-                margin-left: @cf_gutter_width / 2;
-                width: @cf_form_right_width - @cf_gutter_width / 2;
+                margin-left: @gutter_width / 2;
+                width: @form_right_width - @gutter_width / 2;
             }
         }
 
         > select {
-            border: @cf_element_border_size solid @cf_element_border_color;
+            border: @element_border_size solid @element_border_color;
             float: right;
-            margin: 0 0 0 @cf_gutter_width / 2;
-            width: @cf_form_right_width - @cf_gutter_width / 2;
+            margin: 0 0 0 @gutter_width / 2;
+            width: @form_right_width - @gutter_width / 2;
         }
 
         > select[multiple=multiple] {
-            height: @cf_select_multiple_height;
+            height: @select_multiple_height;
         }
 
         > input[type=file] {
             float: left;
-            margin: 0 0 0 @cf_gutter_width / 2;
-            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
+            margin: 0 0 0 @gutter_width / 2;
+            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
         }
 
         > input[type=button],
         > input[type=submit] {
             float: right;
-            margin: 0 0 0 @cf_gutter_width / 2;
+            margin: 0 0 0 @gutter_width / 2;
         }
     }
 }
 
-.clean_form_error {
+.clean_form_error(
+    @error_background_color: #ffefef,
+    @error_color:            #bf0000,
+    @error_margin_top:       -8px,
+    @error_margin_bottom:    8px) {
+
     > div {
         div.right.error {
-            color: @cf_error_color;
-            margin-top: @cf_error_margin_top;
-            margin-bottom: @cf_error_margin_bottom;
+            color: @error_color;
+            margin-top: @error_margin_top;
+            margin-bottom: @error_margin_bottom;
         }
 
     }
@@ -128,40 +120,42 @@
         > input[type=password],
         > input[type=text],
         > textarea {
-            background-color: @cf_error_background_color;
+            background-color: @error_background_color;
         }
     }
 }
 
-.clean_form_help {
+.clean_form_help(
+    @help_color:         #7f7f7f,
+    @help_margin_top:    -8px,
+    @help_margin_bottom: 8px) {
+
     > div > div.right.help {
-        color: @cf_help_color;
-        margin-top: @cf_help_margin_top;
-        margin-bottom: @cf_help_margin_bottom;
-    }
-
-    > div.error {
-        > input[type=password],
-        > input[type=text],
-        > textarea {
-            background-color: @cf_error_background_color;
-        }
+        color: @help_color;
+        margin-top: @help_margin_top;
+        margin-bottom: @help_margin_bottom;
     }
 }
 
-.clean_form_date {
+.clean_form_date(
+    @form_right_width:    256px,
+    @gutter_width:        16px,
+    @date_date_width:     48px,
+    @date_year_width:     64px,
+    @date_element_margin: 8px) {
+
     > div > select.date_date {
         float: left;
-        width: @cf_date_date_width;
+        width: @date_date_width;
     }
     > div > select.date_month {
         float: left;
-        margin: 0 0 0 @cf_date_element_margin;
-        width: (@cf_form_right_width - @cf_gutter_width / 2) - @cf_date_date_width - @cf_date_year_width - @cf_date_element_margin * 2;
+        margin: 0 0 0 @date_element_margin;
+        width: (@form_right_width - @gutter_width / 2) - @date_date_width - @date_year_width - @date_element_margin * 2;
     }
     > div > select.date_year {
         float: left;
-        margin: 0 0 0 @cf_date_element_margin;
-        width: @cf_date_year_width;
+        margin: 0 0 0 @date_element_margin;
+        width: @date_year_width;
     }
 }
