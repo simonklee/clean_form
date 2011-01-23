@@ -77,10 +77,6 @@ Style HTML forms with less.js.
 ### Date
 
     form {
-        @cf_date_date_width:       48px;
-        @cf_date_year_width:       64px;
-        @cf_date_element_margin:   8px;
-
         .clean_form;
         .clean_form_date(
             256px, // form_right_width
