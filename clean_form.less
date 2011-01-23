@@ -140,18 +140,18 @@
 .clean_form_date(
     @form_right_width:    256px,
     @gutter_width:        16px,
-    @date_date_width:     48px,
+    @date_day_width:      48px,
     @date_year_width:     64px,
     @date_element_margin: 8px) {
 
-    > div > select.date_date {
+    > div > select.date_day {
         float: left;
-        width: @date_date_width;
+        width: @date_day_width;
     }
     > div > select.date_month {
         float: left;
         margin: 0 0 0 @date_element_margin;
-        width: (@form_right_width - @gutter_width / 2) - @date_date_width - @date_year_width - @date_element_margin * 2;
+        width: (@form_right_width - @gutter_width / 2) - @date_day_width - @date_year_width - @date_element_margin * 2;
     }
     > div > select.date_year {
         float: left;

@@ -81,7 +81,7 @@ Style HTML forms with less.js.
         .clean_form_date(
             256px, // form_right_width
             16px,  // gutter_width
-            48px,  // date_date_width
+            48px,  // date_day_width
             64px,  // date_year_width
             8px);  // date_element_margin
     }

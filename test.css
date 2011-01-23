@@ -83,7 +83,7 @@ form.test > div > div.right.help {
   margin-top: -8px;
   margin-bottom: 8px;
 }
-form.test > div > select.date_date {
+form.test > div > select.date_day {
   float: left;
   width: 48px;
 }
