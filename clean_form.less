@@ -1,70 +1,70 @@
-.clean_form(
-    @label_align: left,
-    @form_width: 512px,
-    @form_left_width: 256px,
-    @form_right_width: 256px,
-    @gutter_width: 16px,
-    @element_margin_bottom: 16px,
-    @element_border_color: #bfbfbf,
-    @element_border_size: 1px,
-    @element_height: 24px,
-    @textarea_height: 192px,
-    @select_multiple_height: 96px) {
+@cf_label_align:            left;
+@cf_form_width:             512px;
+@cf_form_left_width:        256px;
+@cf_form_right_width:       256px;
+@cf_gutter_width:           16px;
+@cf_element_margin_bottom:  16px;
+@cf_element_border_color:   #bfbfbf;
+@cf_element_border_size:    1px;
+@cf_element_height:         24px;
+@cf_textarea_height:        192px;
+@cf_select_multiple_height: 96px;
 
-    width: @form_width;
+.clean_form {
+    width: @cf_form_width;
 
     > div {
-        margin-bottom: @element_margin_bottom;
+        margin-bottom: @cf_element_margin_bottom;
 
         > label {
-            text-align: @label_align;
+            text-align: @cf_label_align;
         }
 
         > div.left,
         > label {
             float: left;
-            line-height: @element_height;
-            margin-right: @gutter_width / 2;
-            width: @form_left_width - @gutter_width / 2;
+            line-height: @cf_element_height;
+            margin-right: @cf_gutter_width / 2;
+            width: @cf_form_left_width - @cf_gutter_width / 2;
         }
 
         > div.right {
             float: right;
-            line-height: @element_height;
-            margin-left: @gutter_width / 2;
-            width: @form_right_width - @gutter_width / 2;
+            line-height: @cf_element_height;
+            margin-left: @cf_gutter_width / 2;
+            width: @cf_form_right_width - @cf_gutter_width / 2;
         }
 
         > input[type=password],
         > input[type=text] {
-            border: @element_border_size solid @element_border_color;
+            border: @cf_element_border_size solid @cf_element_border_color;
             float: right;
-            height: @element_height;
-            line-height: @element_height;
-            margin-left: @gutter_width / 2;
+            height: @cf_element_height;
+            line-height: @cf_element_height;
+            margin-left: @cf_gutter_width / 2;
             padding: 0;
-            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
+            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
         }
 
         > textarea {
-            border: @element_border_size solid @element_border_color;
+            border: @cf_element_border_size solid @cf_element_border_color;
             float: right;
-            height: @textarea_height;
-            margin-left: @gutter_width / 2;
+            height: @cf_textarea_height;
+            margin-left: @cf_gutter_width / 2;
             padding: 0;
-            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
+            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
         }
 
         input[type=checkbox],
         input[type=radio] {
             float: left;
-            height: @element_height;
-            line-height: @element_height;
+            height: @cf_element_height;
+            line-height: @cf_element_height;
             margin: 0 0.5em 0 0;
         }
 
         > input[type=checkbox] {
-            margin-left: @gutter_width / 2;
+            margin-left: @cf_gutter_width / 2;
         }
 
         > ul {
@@ -75,33 +75,33 @@
 
             > li > label {
                 float: left;
-                line-height: @element_height;
-                margin-left: @gutter_width / 2;
-                width: @form_right_width - @gutter_width / 2;
+                line-height: @cf_element_height;
+                margin-left: @cf_gutter_width / 2;
+                width: @cf_form_right_width - @cf_gutter_width / 2;
             }
         }
 
         > select {
-            border: @element_border_size solid @element_border_color;
+            border: @cf_element_border_size solid @cf_element_border_color;
             float: right;
-            margin: 0 0 0 @gutter_width / 2;
-            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
+            margin: 0 0 0 @cf_gutter_width / 2;
+            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
         }
 
         > select[multiple=multiple] {
-            height: @select_multiple_height;
+            height: @cf_select_multiple_height;
         }
 
         > input[type=file] {
             float: left;
-            margin: 0 0 0 @gutter_width / 2;
-            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
+            margin: 0 0 0 @cf_gutter_width / 2;
+            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
         }
 
         > input[type=button],
         > input[type=submit] {
             float: right;
-            margin: 0 0 0 @gutter_width / 2;
+            margin: 0 0 0 @cf_gutter_width / 2;
         }
     }
 }

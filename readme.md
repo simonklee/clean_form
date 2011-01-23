@@ -1,63 +1,42 @@
 # clean_form
 
-A flexible [less.js](https://github.com/cloudhead/less.js/) mixin for styling two column HTML forms.
-
-
-## Features
-
- * No hacks or creativity
- * Fields that receive text are styled with a thin border
- * Buttons render natively on all platforms
- * Left and right aligned labels are supported
- * Internet Explorer 7 support is optional
- * Compatible with [Eric Meyer Reset](http://meyerweb.com/)
- * Test validates as HTML5
+Styles the most common HTML controls using less.js.
 
 ## Setup
 
 1. Copy `clean_form.less` to your website directory.
 
-2. Define form classes in a separate `less`-file, as it makes it easier to
-   upgrade `clean_form.less`. Before you define anything, import
-   `clean_form.less`.
+2. Define as many form configurations as you need in a separate `less`-file.
 
         @import url('clean_form.less');
 
-   This is the definition of a form using the default settings.
-
-        form.foo {
+        form#foo {
             .clean_form;
         }
 
-   However, you might want to define a customized form.
-
         form.bar {
-            .clean_form(
-                left,       // label_align
-                512px,      // form_width
-                256px,      // form_left_width
-                256px,      // form_right_width
-                16px,       // gutter_width
-                16px,       // element_margin_bottom
-                #bfbfbf,    // element_border_color
-                1px,        // element_border_size
-                24px,       // element_height
-                192px,      // textarea_height
-                96px);      // select_multiple_height
-        }
+            @cf_label_align:            left;
+            @cf_form_width:             512px;
+            @cf_form_left_width:        256px;
+            @cf_form_right_width:       256px;
+            @cf_gutter_width:           16px;
+            @cf_element_margin_bottom:  16px;
+            @cf_element_border_color:   #bfbfbf;
+            @cf_element_border_size:    1px;
+            @cf_element_height:         24px;
+            @cf_textarea_height:        192px;
+            @cf_select_multiple_height: 96px;
 
-   It’s possible to set as many arguments that you like and use the default
-   settings for the remaining arguments.
+            .clean_form;
+        }
 
         form.baz {
-            .clean_form(
-                left,       // label_align
-                1024px,     // form_width
-                512px,      // form_left_width
-                512px);     // form_right_width
+            @cf_label_align:            right;
+
+            .clean_form;
         }
 
-3. Compile your `less`-file.
+3. Compile your `less`-file. E.g. `lessc test.less test.css`.
 
 4. Modify the structure of your HTML forms so that they match the one in
    `test.html`.

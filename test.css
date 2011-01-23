@@ -1,3 +1,80 @@
+.clean_form {
+  width: 512px;
+}
+.clean_form > div {
+  margin-bottom: 16px;
+}
+.clean_form > div > label {
+  text-align: left;
+}
+.clean_form > div > div.left, .clean_form > div > label {
+  float: left;
+  line-height: 24px;
+  margin-right: 8px;
+  width: 248px;
+}
+.clean_form > div > div.right {
+  float: right;
+  line-height: 24px;
+  margin-left: 8px;
+  width: 248px;
+}
+.clean_form > div > input[type=password], .clean_form > div > input[type=text] {
+  border: 1px solid #bfbfbf;
+  float: right;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 8px;
+  padding: 0;
+  width: 246px;
+}
+.clean_form > div > textarea {
+  border: 1px solid #bfbfbf;
+  float: right;
+  height: 192px;
+  margin-left: 8px;
+  padding: 0;
+  width: 246px;
+}
+.clean_form > div input[type=checkbox], .clean_form > div input[type=radio] {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 0.5em 0 0;
+}
+.clean_form > div > input[type=checkbox] {
+  margin-left: 8px;
+}
+.clean_form > div > ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.clean_form > div > ul > li > label {
+  float: left;
+  line-height: 24px;
+  margin-left: 8px;
+  width: 248px;
+}
+.clean_form > div > select {
+  border: 1px solid #bfbfbf;
+  float: right;
+  margin: 0 0 0 8px;
+  width: 246px;
+}
+.clean_form > div > select[multiple=multiple] {
+  height: 96px;
+}
+.clean_form > div > input[type=file] {
+  float: left;
+  margin: 0 0 0 8px;
+  width: 246px;
+}
+.clean_form > div > input[type=button], .clean_form > div > input[type=submit] {
+  float: right;
+  margin: 0 0 0 8px;
+}
 form.test {
   width: 512px;
 }
@@ -5,7 +82,7 @@ form.test > div {
   margin-bottom: 16px;
 }
 form.test > div > label {
-  text-align: right;
+  text-align: left;
 }
 form.test > div > div.left, form.test > div > label {
   float: left;
