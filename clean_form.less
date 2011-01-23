@@ -19,6 +19,13 @@
 @cf_help_margin_top:        -8px;
 @cf_help_margin_bottom:     8px;
 
+/* sum of widths must be 32 */
+@cf_date_date_width:       6;
+@cf_date_month_width:      17;
+@cf_date_year_width:       9;
+@cf_date_round_compensate: 2px;
+@cf_date_element_margin:   8px;
+
 .clean_form {
     width: @cf_form_width;
 
@@ -32,14 +39,12 @@
         > div.left,
         > label {
             float: left;
-            line-height: @cf_element_height;
             margin-right: @cf_gutter_width / 2;
             width: @cf_form_left_width - @cf_gutter_width / 2;
         }
 
         > div.right {
             float: right;
-            line-height: @cf_element_height;
             margin-left: @cf_gutter_width / 2;
             width: @cf_form_right_width - @cf_gutter_width / 2;
         }
@@ -49,7 +54,6 @@
             border: @cf_element_border_size solid @cf_element_border_color;
             float: right;
             height: @cf_element_height;
-            line-height: @cf_element_height;
             margin-left: @cf_gutter_width / 2;
             padding: 0;
             width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
@@ -68,7 +72,6 @@
         input[type=radio] {
             float: left;
             height: @cf_element_height;
-            line-height: @cf_element_height;
             margin: 0 0.5em 0 0;
         }
 
@@ -84,7 +87,6 @@
 
             > li > label {
                 float: left;
-                line-height: @cf_element_height;
                 margin-left: @cf_gutter_width / 2;
                 width: @cf_form_right_width - @cf_gutter_width / 2;
             }
@@ -94,7 +96,7 @@
             border: @cf_element_border_size solid @cf_element_border_color;
             float: right;
             margin: 0 0 0 @cf_gutter_width / 2;
-            width: @cf_form_right_width - @cf_element_border_size * 2 - @cf_gutter_width / 2;
+            width: @cf_form_right_width - @cf_gutter_width / 2;
         }
 
         > select[multiple=multiple] {
@@ -135,12 +137,10 @@
 }
 
 .clean_form_help {
-    > div {
-        div.right.help {
-            color: @cf_help_color;
-            margin-top: @cf_help_margin_top;
-            margin-bottom: @cf_help_margin_bottom;
-        }
+    > div > div.right.help {
+        color: @cf_help_color;
+        margin-top: @cf_help_margin_top;
+        margin-bottom: @cf_help_margin_bottom;
     }
 
     > div.error {
@@ -149,5 +149,22 @@
         > textarea {
             background-color: @cf_error_background_color;
         }
+    }
+}
+
+.clean_form_date {
+    > div > select.date_date {
+        float: left;
+        width: (@cf_form_right_width - @cf_gutter_width / 2) / 32 * @cf_date_date_width;
+    }
+    > div > select.date_month {
+        float: left;
+        margin: 0 0 0 @cf_date_element_margin;
+        width: (@cf_form_right_width - @cf_gutter_width / 2) / 32 * @cf_date_month_width - @cf_date_element_margin;
+    }
+    > div > select.date_year {
+        float: left;
+        margin: 0 0 0 @cf_date_element_margin;
+        width: (@cf_form_right_width - @cf_gutter_width / 2) / 32 * @cf_date_year_width - @cf_date_element_margin + @cf_date_round_compensate;
     }
 }

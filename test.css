@@ -1,3 +1,4 @@
+/* sum of widths must be 32 */
 .clean_form {
   width: 512px;
 }
@@ -9,13 +10,11 @@
 }
 .clean_form > div > div.left, .clean_form > div > label {
   float: left;
-  line-height: 24px;
   margin-right: 8px;
   width: 248px;
 }
 .clean_form > div > div.right {
   float: right;
-  line-height: 24px;
   margin-left: 8px;
   width: 248px;
 }
@@ -23,7 +22,6 @@
   border: 1px solid #bfbfbf;
   float: right;
   height: 24px;
-  line-height: 24px;
   margin-left: 8px;
   padding: 0;
   width: 246px;
@@ -39,7 +37,6 @@
 .clean_form > div input[type=checkbox], .clean_form > div input[type=radio] {
   float: left;
   height: 24px;
-  line-height: 24px;
   margin: 0 0.5em 0 0;
 }
 .clean_form > div > input[type=checkbox] {
@@ -53,7 +50,6 @@
 }
 .clean_form > div > ul > li > label {
   float: left;
-  line-height: 24px;
   margin-left: 8px;
   width: 248px;
 }
@@ -61,7 +57,7 @@
   border: 1px solid #bfbfbf;
   float: right;
   margin: 0 0 0 8px;
-  width: 246px;
+  width: 248px;
 }
 .clean_form > div > select[multiple=multiple] {
   height: 96px;
@@ -83,13 +79,27 @@
 .clean_form_error > div.error > input[type=password], .clean_form_error > div.error > input[type=text], .clean_form_error > div.error > textarea {
   background-color: #ffefef;
 }
-.clean_form_help > div div.right.help {
+.clean_form_help > div > div.right.help {
   color: #7f7f7f;
   margin-top: -8px;
   margin-bottom: 8px;
 }
 .clean_form_help > div.error > input[type=password], .clean_form_help > div.error > input[type=text], .clean_form_help > div.error > textarea {
   background-color: #ffefef;
+}
+.clean_form_date > div > select.date_date {
+  float: left;
+  width: 46.5px;
+}
+.clean_form_date > div > select.date_month {
+  float: left;
+  margin: 0 0 0 8px;
+  width: 123.75px;
+}
+.clean_form_date > div > select.date_year {
+  float: left;
+  margin: 0 0 0 8px;
+  width: 63.75px;
 }
 form.test {
   width: 512px;
@@ -102,13 +112,11 @@ form.test > div > label {
 }
 form.test > div > div.left, form.test > div > label {
   float: left;
-  line-height: 24px;
   margin-right: 8px;
   width: 248px;
 }
 form.test > div > div.right {
   float: right;
-  line-height: 24px;
   margin-left: 8px;
   width: 248px;
 }
@@ -116,7 +124,6 @@ form.test > div > input[type=password], form.test > div > input[type=text] {
   border: 1px solid #bfbfbf;
   float: right;
   height: 24px;
-  line-height: 24px;
   margin-left: 8px;
   padding: 0;
   width: 246px;
@@ -132,7 +139,6 @@ form.test > div > textarea {
 form.test > div input[type=checkbox], form.test > div input[type=radio] {
   float: left;
   height: 24px;
-  line-height: 24px;
   margin: 0 0.5em 0 0;
 }
 form.test > div > input[type=checkbox] {
@@ -146,7 +152,6 @@ form.test > div > ul {
 }
 form.test > div > ul > li > label {
   float: left;
-  line-height: 24px;
   margin-left: 8px;
   width: 248px;
 }
@@ -154,7 +159,7 @@ form.test > div > select {
   border: 1px solid #bfbfbf;
   float: right;
   margin: 0 0 0 8px;
-  width: 246px;
+  width: 248px;
 }
 form.test > div > select[multiple=multiple] {
   height: 96px;
@@ -176,13 +181,27 @@ form.test > div div.right.error {
 form.test > div.error > input[type=password], form.test > div.error > input[type=text], form.test > div.error > textarea {
   background-color: #ffefef;
 }
-form.test > div div.right.help {
+form.test > div > div.right.help {
   color: #7f7f7f;
   margin-top: -8px;
   margin-bottom: 8px;
 }
 form.test > div.error > input[type=password], form.test > div.error > input[type=text], form.test > div.error > textarea {
   background-color: #ffefef;
+}
+form.test > div > select.date_date {
+  float: left;
+  width: 46.5px;
+}
+form.test > div > select.date_month {
+  float: left;
+  margin: 0 0 0 8px;
+  width: 123.75px;
+}
+form.test > div > select.date_year {
+  float: left;
+  margin: 0 0 0 8px;
+  width: 63.75px;
 }
 body,
 input,
