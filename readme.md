@@ -1,6 +1,6 @@
 # clean_form
 
-Styles the most common HTML controls using less.js.
+Style HTML forms with less.js.
 
 ## Setup
 
