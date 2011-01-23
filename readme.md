@@ -58,31 +58,31 @@ Style HTML forms with less.js.
 
 ### Error text
 
-            @cf_error_background_color: #ffefef;
-            @cf_error_color:            #bf0000;
-            @cf_error_margin_top:       -8px;
-            @cf_error_margin_bottom:    8px;
+        @cf_error_background_color: #ffefef;
+        @cf_error_color:            #bf0000;
+        @cf_error_margin_top:       -8px;
+        @cf_error_margin_bottom:    8px;
 
-            .clean_form_error;
+        .clean_form_error;
 
 ### Help text
 
-            @cf_help_color:             #7f7f7f;
-            @cf_help_margin_top:        -8px;
-            @cf_help_margin_bottom:     8px;
+        @cf_help_color:             #7f7f7f;
+        @cf_help_margin_top:        -8px;
+        @cf_help_margin_bottom:     8px;
 
-            .clean_form_help;
+        .clean_form_help;
 
 ### Date
 
-            /* sum of widths must be 32 */
-            @cf_date_date_width:       6;
-            @cf_date_month_width:      17;
-            @cf_date_year_width:       9;
-            @cf_date_round_compensate: 2px;
-            @cf_date_element_margin:   8px;
+        /* sum of widths must be 32 */
+        @cf_date_date_width:       6;
+        @cf_date_month_width:      17;
+        @cf_date_year_width:       9;
+        @cf_date_round_compensate: 2px;
+        @cf_date_element_margin:   8px;
 
-            .clean_form_date;
+        .clean_form_date;
 
 ## License
 
