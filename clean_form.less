@@ -9,7 +9,7 @@
     @element_border_size:    1px,
     @element_height:         24px,
     @textarea_height:        192px,
-    @select_multiple_height: 96px) {
+    @select_multiple_height: 128px) {
 
     width: @form_width;
 
@@ -82,6 +82,7 @@
         > select {
             border: @element_border_size solid @element_border_color;
             float: right;
+            height: @element_height;
             margin: 0 0 0 @gutter_width / 2;
             width: @form_right_width - @gutter_width / 2;
         }
@@ -99,6 +100,7 @@
         > input[type=button],
         > input[type=submit] {
             float: right;
+            height: @element_height;
             margin: 0 0 0 @gutter_width / 2;
         }
     }
@@ -113,8 +115,8 @@
     > div {
         div.right.error {
             color: @error_color;
-            margin-top: @error_margin_top;
             margin-bottom: @error_margin_bottom;
+            margin-top: @error_margin_top;
         }
 
     }
@@ -135,8 +137,8 @@
 
     > div > div.right.help {
         color: @help_color;
-        margin-top: @help_margin_top;
         margin-bottom: @help_margin_bottom;
+        margin-top: @help_margin_top;
     }
 }
 

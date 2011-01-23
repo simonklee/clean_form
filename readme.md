@@ -26,7 +26,7 @@ Style HTML forms with less.js.
                1px,     // element_border_size
                24px,    // element_height
                192px,   // textarea_height
-               96px);   // select_multiple_height
+               128px);  // select_multiple_height
        }
 
        form.baz {
