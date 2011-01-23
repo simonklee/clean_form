@@ -5,6 +5,7 @@ form.test > div {
   margin-bottom: 16px;
 }
 form.test > div > label {
+  line-height: 24px;
   text-align: left;
 }
 form.test > div > div.left, form.test > div > label {
@@ -21,6 +22,7 @@ form.test > div > input[type=password], form.test > div > input[type=text] {
   border: 1px solid #bfbfbf;
   float: right;
   height: 24px;
+  line-height: 24px;
   margin-left: 8px;
   padding: 0;
   width: 246px;
@@ -49,6 +51,7 @@ form.test > div > ul {
 }
 form.test > div > ul > li > label {
   float: left;
+  line-height: 24px;
   margin-left: 8px;
   width: 248px;
 }
@@ -101,5 +104,5 @@ body,
 input,
 select,
 textarea {
-  font: 16px/1.5 sans-serif;
+  font: 14px/1.5 sans-serif;
 }

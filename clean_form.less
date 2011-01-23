@@ -17,6 +17,7 @@
         margin-bottom: @element_margin_bottom;
 
         > label {
+            line-height: @element_height;
             text-align: @label_align;
         }
 
@@ -38,6 +39,7 @@
             border: @element_border_size solid @element_border_color;
             float: right;
             height: @element_height;
+            line-height: @element_height;
             margin-left: @gutter_width / 2;
             padding: 0;
             width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
@@ -71,6 +73,7 @@
 
             > li > label {
                 float: left;
+                line-height: @element_height;
                 margin-left: @gutter_width / 2;
                 width: @form_right_width - @gutter_width / 2;
             }
