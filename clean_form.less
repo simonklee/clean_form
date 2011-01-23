@@ -19,11 +19,8 @@
 @cf_help_margin_top:        -8px;
 @cf_help_margin_bottom:     8px;
 
-/* sum of widths must be 32 */
-@cf_date_date_width:       6;
-@cf_date_month_width:      17;
-@cf_date_year_width:       9;
-@cf_date_round_compensate: 2px;
+@cf_date_date_width:       48px;
+@cf_date_year_width:       64px;
 @cf_date_element_margin:   8px;
 
 .clean_form {
@@ -155,16 +152,16 @@
 .clean_form_date {
     > div > select.date_date {
         float: left;
-        width: (@cf_form_right_width - @cf_gutter_width / 2) / 32 * @cf_date_date_width;
+        width: @cf_date_date_width;
     }
     > div > select.date_month {
         float: left;
         margin: 0 0 0 @cf_date_element_margin;
-        width: (@cf_form_right_width - @cf_gutter_width / 2) / 32 * @cf_date_month_width - @cf_date_element_margin;
+        width: (@cf_form_right_width - @cf_gutter_width / 2) - @cf_date_date_width - @cf_date_year_width - @cf_date_element_margin * 2;
     }
     > div > select.date_year {
         float: left;
         margin: 0 0 0 @cf_date_element_margin;
-        width: (@cf_form_right_width - @cf_gutter_width / 2) / 32 * @cf_date_year_width - @cf_date_element_margin + @cf_date_round_compensate;
+        width: @cf_date_year_width;
     }
 }

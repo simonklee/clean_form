@@ -1,4 +1,3 @@
-/* sum of widths must be 32 */
 .clean_form {
   width: 512px;
 }
@@ -89,17 +88,17 @@
 }
 .clean_form_date > div > select.date_date {
   float: left;
-  width: 46.5px;
+  width: 48px;
 }
 .clean_form_date > div > select.date_month {
   float: left;
   margin: 0 0 0 8px;
-  width: 123.75px;
+  width: 120px;
 }
 .clean_form_date > div > select.date_year {
   float: left;
   margin: 0 0 0 8px;
-  width: 63.75px;
+  width: 64px;
 }
 form.test {
   width: 512px;
@@ -191,17 +190,17 @@ form.test > div.error > input[type=password], form.test > div.error > input[type
 }
 form.test > div > select.date_date {
   float: left;
-  width: 46.5px;
+  width: 48px;
 }
 form.test > div > select.date_month {
   float: left;
   margin: 0 0 0 8px;
-  width: 123.75px;
+  width: 120px;
 }
 form.test > div > select.date_year {
   float: left;
   margin: 0 0 0 8px;
-  width: 63.75px;
+  width: 64px;
 }
 body,
 input,
