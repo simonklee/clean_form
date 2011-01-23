@@ -36,10 +36,17 @@ Styles the most common HTML controls using less.js.
             .clean_form;
         }
 
-3. Compile your `less`-file. E.g. `lessc test.less test.css`.
+3. Compile. E.g. `lessc test.less test.css`.
 
-4. Modify the structure of your HTML forms so that they match the one in
-   `test.html`.
+4. Use the HTML structure defined in `test.html`. This is an example.
+
+        <form id="foo">
+            <div>
+                <label for="input_text">Label for text input</label>
+                <input id="input_text" type="text">
+                <div style="clear: both;"></div>
+            </div>
+        </form>
 
 5. You probably also want to set the typography for all the form elements.
 
