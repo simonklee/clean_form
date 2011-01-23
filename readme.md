@@ -59,33 +59,29 @@ Style HTML forms with less.js.
 ### Error text
 
     form {
-        .clean_form;
-
         @cf_error_background_color: #ffefef;
         @cf_error_color:            #bf0000;
         @cf_error_margin_top:       -8px;
         @cf_error_margin_bottom:    8px;
 
+        .clean_form;
         .clean_form_error;
     }
 
 ### Help text
 
     form {
-        .clean_form;
-
         @cf_help_color:             #7f7f7f;
         @cf_help_margin_top:        -8px;
         @cf_help_margin_bottom:     8px;
 
+        .clean_form;
         .clean_form_help;
     }
 
 ### Date
 
     form {
-        .clean_form;
-
         /* sum of widths must be 32 */
         @cf_date_date_width:       6;
         @cf_date_month_width:      17;
@@ -93,6 +89,7 @@ Style HTML forms with less.js.
         @cf_date_round_compensate: 2px;
         @cf_date_element_margin:   8px;
 
+        .clean_form;
         .clean_form_date;
     }
 
