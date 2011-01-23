@@ -8,81 +8,81 @@ Style HTML forms with less.js.
 
 2. Define as many form configurations as you need in a separate `less`-file.
 
-        @import url('clean_form.less');
+    @import url('clean_form.less');
 
-        form#foo {
-            .clean_form;
-        }
+    form#foo {
+        .clean_form;
+    }
 
-        form.bar {
-            @cf_label_align:            left;
-            @cf_form_width:             512px;
-            @cf_form_left_width:        256px;
-            @cf_form_right_width:       256px;
-            @cf_gutter_width:           16px;
-            @cf_element_margin_bottom:  16px;
-            @cf_element_border_color:   #bfbfbf;
-            @cf_element_border_size:    1px;
-            @cf_element_height:         24px;
-            @cf_textarea_height:        192px;
-            @cf_select_multiple_height: 96px;
+    form.bar {
+        @cf_label_align:            left;
+        @cf_form_width:             512px;
+        @cf_form_left_width:        256px;
+        @cf_form_right_width:       256px;
+        @cf_gutter_width:           16px;
+        @cf_element_margin_bottom:  16px;
+        @cf_element_border_color:   #bfbfbf;
+        @cf_element_border_size:    1px;
+        @cf_element_height:         24px;
+        @cf_textarea_height:        192px;
+        @cf_select_multiple_height: 96px;
 
-            .clean_form;
-        }
+        .clean_form;
+    }
 
-        form.baz {
-            @cf_label_align:            right;
+    form.baz {
+        @cf_label_align:            right;
 
-            .clean_form;
-        }
+        .clean_form;
+    }
 
 3. Compile. E.g. `lessc test.less test.css`.
 
 4. Use the HTML structure defined in `test.html`. This is an example.
 
-        <form id="foo">
-            <div>
-                <label for="input_text">Label for text input</label>
-                <input id="input_text" type="text">
-                <div style="clear: both;"></div>
-            </div>
-        </form>
+    <form id="foo">
+        <div>
+            <label for="input_text">Label for text input</label>
+            <input id="input_text" type="text">
+            <div style="clear: both;"></div>
+        </div>
+    </form>
 
 5. You probably also want to set the typography for all the form elements.
 
-        body, input, select, textarea {
-            font: 16px/1.5 sans-serif;
-        }
+    body, input, select, textarea {
+        font: 16px/1.5 sans-serif;
+    }
 
 ## Additional features
 
 ### Error text
 
-        @cf_error_background_color: #ffefef;
-        @cf_error_color:            #bf0000;
-        @cf_error_margin_top:       -8px;
-        @cf_error_margin_bottom:    8px;
+    @cf_error_background_color: #ffefef;
+    @cf_error_color:            #bf0000;
+    @cf_error_margin_top:       -8px;
+    @cf_error_margin_bottom:    8px;
 
-        .clean_form_error;
+    .clean_form_error;
 
 ### Help text
 
-        @cf_help_color:             #7f7f7f;
-        @cf_help_margin_top:        -8px;
-        @cf_help_margin_bottom:     8px;
+    @cf_help_color:             #7f7f7f;
+    @cf_help_margin_top:        -8px;
+    @cf_help_margin_bottom:     8px;
 
-        .clean_form_help;
+    .clean_form_help;
 
 ### Date
 
-        /* sum of widths must be 32 */
-        @cf_date_date_width:       6;
-        @cf_date_month_width:      17;
-        @cf_date_year_width:       9;
-        @cf_date_round_compensate: 2px;
-        @cf_date_element_margin:   8px;
+    /* sum of widths must be 32 */
+    @cf_date_date_width:       6;
+    @cf_date_month_width:      17;
+    @cf_date_year_width:       9;
+    @cf_date_round_compensate: 2px;
+    @cf_date_element_margin:   8px;
 
-        .clean_form_date;
+    .clean_form_date;
 
 ## License
 
