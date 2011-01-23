@@ -75,6 +75,22 @@
   float: right;
   margin: 0 0 0 8px;
 }
+.clean_form_error > div div.right.error {
+  color: #bf0000;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.clean_form_error > div.error > input[type=password], .clean_form_error > div.error > input[type=text], .clean_form_error > div.error > textarea {
+  background-color: #ffefef;
+}
+.clean_form_help > div div.right.help {
+  color: #7f7f7f;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.clean_form_help > div.error > input[type=password], .clean_form_help > div.error > input[type=text], .clean_form_help > div.error > textarea {
+  background-color: #ffefef;
+}
 form.test {
   width: 512px;
 }
@@ -151,6 +167,22 @@ form.test > div > input[type=file] {
 form.test > div > input[type=button], form.test > div > input[type=submit] {
   float: right;
   margin: 0 0 0 8px;
+}
+form.test > div div.right.error {
+  color: #bf0000;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+form.test > div.error > input[type=password], form.test > div.error > input[type=text], form.test > div.error > textarea {
+  background-color: #ffefef;
+}
+form.test > div div.right.help {
+  color: #7f7f7f;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+form.test > div.error > input[type=password], form.test > div.error > input[type=text], form.test > div.error > textarea {
+  background-color: #ffefef;
 }
 body,
 input,

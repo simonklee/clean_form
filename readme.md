@@ -27,7 +27,18 @@ Style HTML forms with less.js.
             @cf_textarea_height:        192px;
             @cf_select_multiple_height: 96px;
 
+            @cf_error_background_color: #ffefef;
+            @cf_error_color:            #bf0000;
+            @cf_error_margin_top:       -8px;
+            @cf_error_margin_bottom:    8px;
+
+            @cf_help_color:             #7f7f7f;
+            @cf_help_margin_top:        -8px;
+            @cf_help_margin_bottom:     8px;
+
             .clean_form;
+            .clean_form_error;
+            .clean_form_help;
         }
 
         form.baz {

@@ -10,6 +10,15 @@
 @cf_textarea_height:        192px;
 @cf_select_multiple_height: 96px;
 
+@cf_error_background_color: #ffefef;
+@cf_error_color:            #bf0000;
+@cf_error_margin_top:       -8px;
+@cf_error_margin_bottom:    8px;
+
+@cf_help_color:             #7f7f7f;
+@cf_help_margin_top:        -8px;
+@cf_help_margin_bottom:     8px;
+
 .clean_form {
     width: @cf_form_width;
 
@@ -102,6 +111,43 @@
         > input[type=submit] {
             float: right;
             margin: 0 0 0 @cf_gutter_width / 2;
+        }
+    }
+}
+
+.clean_form_error {
+    > div {
+        div.right.error {
+            color: @cf_error_color;
+            margin-top: @cf_error_margin_top;
+            margin-bottom: @cf_error_margin_bottom;
+        }
+
+    }
+
+    > div.error {
+        > input[type=password],
+        > input[type=text],
+        > textarea {
+            background-color: @cf_error_background_color;
+        }
+    }
+}
+
+.clean_form_help {
+    > div {
+        div.right.help {
+            color: @cf_help_color;
+            margin-top: @cf_help_margin_top;
+            margin-bottom: @cf_help_margin_bottom;
+        }
+    }
+
+    > div.error {
+        > input[type=password],
+        > input[type=text],
+        > textarea {
+            background-color: @cf_error_background_color;
         }
     }
 }
