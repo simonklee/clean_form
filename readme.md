@@ -88,10 +88,8 @@ Style HTML forms with less.js.
 
 ## To do
 
-* I would like to add support for horizontal forms. I am not sure what the
-  optimal way to structure the code is. The HTML probably doesn’t need the divs.
-  For the less.js-part, one option is to create a separate mixin. Another option
-  is to integrate it with the existing.
+* I would like to add support for forms where the label and the element
+  receiving input are split vertically.
 
 * The labels and input elements are now vertically centered relative to their
   line heights. Aligning text on a baseline is nicer visually, but it might add
