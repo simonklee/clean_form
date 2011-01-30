@@ -21,10 +21,10 @@ Style HTML forms with less.js.
                256px,   // form_left_width
                256px,   // form_right_width
                16px,    // gutter_width
-               16px,    // element_margin_bottom
+               24px,    // field_height
+               16px,    // field_margin_bottom
                #bfbfbf, // element_border_color
                1px,     // element_border_size
-               24px,    // element_height
                192px,   // textarea_height
                128px);  // select_multiple_height
        }
@@ -60,7 +60,7 @@ Style HTML forms with less.js.
         .clean_form_error(
             #ffefef, // error_background_color
             #bf0000, // error_color
-            8px,    // error_margin_top
+            8px,     // error_margin_top
             8px);    // error_margin_bottom
     }
 
@@ -70,7 +70,7 @@ Style HTML forms with less.js.
         .clean_form;
         .clean_form_help(
             #7f7f7f, // help_color
-            8px,    // help_margin_top
+            8px,     // help_margin_top
             8px);    // help_margin_bottom
     }
 

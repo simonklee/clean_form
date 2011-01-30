@@ -4,20 +4,20 @@
     @form_left_width:        256px,
     @form_right_width:       256px,
     @gutter_width:           16px,
-    @element_margin_bottom:  16px,
+    @field_height:           24px,
+    @field_margin_bottom:    16px,
     @element_border_color:   #bfbfbf,
     @element_border_size:    1px,
-    @element_height:         24px,
     @textarea_height:        192px,
     @select_multiple_height: 128px) {
 
     width: @form_width;
 
     > div {
-        margin-bottom: @element_margin_bottom;
+        margin-bottom: @field_margin_bottom;
 
         > label {
-            line-height: @element_height;
+            line-height: @field_height;
             text-align: @label_align;
         }
 
@@ -38,8 +38,8 @@
         > input[type=text] {
             border: @element_border_size solid @element_border_color;
             float: right;
-            height: @element_height;
-            line-height: @element_height;
+            height: @field_height;
+            line-height: @field_height;
             margin-left: @gutter_width / 2;
             padding: 0;
             width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
@@ -57,7 +57,7 @@
         input[type=checkbox],
         input[type=radio] {
             float: left;
-            height: @element_height;
+            height: @field_height;
             margin: 0 0.5em 0 0;
         }
 
@@ -73,7 +73,7 @@
 
             > li > label {
                 float: left;
-                line-height: @element_height;
+                line-height: @field_height;
                 margin-left: @gutter_width / 2;
                 width: @form_right_width - @gutter_width / 2;
             }
@@ -82,7 +82,7 @@
         > select {
             border: @element_border_size solid @element_border_color;
             float: right;
-            height: @element_height;
+            height: @field_height;
             margin: 0 0 0 @gutter_width / 2;
             width: @form_right_width - @gutter_width / 2;
         }
@@ -100,7 +100,7 @@
         > input[type=button],
         > input[type=submit] {
             float: right;
-            height: @element_height;
+            height: @field_height;
             margin: 0 0 0 @gutter_width / 2;
         }
     }
