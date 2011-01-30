@@ -37,7 +37,7 @@ Style HTML forms with less.js.
 
        lessc test.less test.css
 
-4. Use the HTML structure defined in `test.html`. This is an example.
+4. Use the HTML structure defined in `test.html`.
 
        <form id="foo">
            <div>
