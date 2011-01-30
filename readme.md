@@ -33,7 +33,9 @@ Style HTML forms with less.js.
            .clean_form(right);
        }
 
-3. Compile. E.g. `lessc test.less test.css`.
+3. Compile.
+
+       lessc test.less test.css
 
 4. Use the HTML structure defined in `test.html`. This is an example.
 
