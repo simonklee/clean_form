@@ -60,7 +60,7 @@ Style HTML forms with less.js.
         .clean_form_error(
             #ffefef, // error_background_color
             #bf0000, // error_color
-            -8px,    // error_margin_top
+            8px,    // error_margin_top
             8px);    // error_margin_bottom
     }
 
@@ -70,7 +70,7 @@ Style HTML forms with less.js.
         .clean_form;
         .clean_form_help(
             #7f7f7f, // help_color
-            -8px,    // help_margin_top
+            8px,    // help_margin_top
             8px);    // help_margin_bottom
     }
 
