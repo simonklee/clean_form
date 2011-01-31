@@ -35,7 +35,6 @@ form.test > div > textarea {
 }
 form.test > div input[type=checkbox], form.test > div input[type=radio] {
   float: left;
-  height: 24px;
   margin: 0 0.5em 0 0;
 }
 form.test > div > input[type=checkbox] {
