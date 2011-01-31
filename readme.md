@@ -93,10 +93,9 @@ Style HTML forms with less.js.
 * I would like to add support for forms where the label and the element
   receiving input are split vertically.
 
-* The labels and input elements are now vertically centered relative to their
-  line heights. Aligning text on a baseline is nicer visually, but it might add
-  complexity to the CSS. When I find time to do it, I might steal some ideas
-  from [Baseline](http://baselinecss.com/).
+* Aligning text on a baseline is nicer visually, but it might add complexity
+  to the CSS. When I find time to do it, I might steal some ideas from
+  [Baseline](http://baselinecss.com/).
 
 ## License
 
