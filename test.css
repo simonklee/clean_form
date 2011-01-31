@@ -21,7 +21,7 @@ form.test > div > div.right {
 form.test > div > input[type=password], form.test > div > input[type=text] {
   border: 1px solid #bfbfbf;
   float: right;
-  height: 24px;
+  height: 22px;
   line-height: 24px;
   margin-left: 8px;
   padding: 0;
@@ -30,7 +30,7 @@ form.test > div > input[type=password], form.test > div > input[type=text] {
 form.test > div > textarea {
   border: 1px solid #bfbfbf;
   float: right;
-  height: 192px;
+  height: 190px;
   margin-left: 8px;
   padding: 0;
   width: 246px;

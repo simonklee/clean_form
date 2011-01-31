@@ -38,7 +38,7 @@
         > input[type=text] {
             border: @element_border_size solid @element_border_color;
             float: right;
-            height: @field_height;
+            height: @field_height - @element_border_size * 2;
             line-height: @field_height;
             margin-left: @gutter_width / 2;
             padding: 0;
@@ -48,7 +48,7 @@
         > textarea {
             border: @element_border_size solid @element_border_color;
             float: right;
-            height: @textarea_height;
+            height: @textarea_height - @element_border_size * 2;
             margin-left: @gutter_width / 2;
             padding: 0;
             width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
