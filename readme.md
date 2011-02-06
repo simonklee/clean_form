@@ -1,6 +1,6 @@
 # clean_form
 
-Style HTML forms using less.js.
+Style forms using less.js.
 
 ## Setup
 
