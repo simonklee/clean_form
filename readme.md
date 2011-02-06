@@ -1,12 +1,22 @@
 # clean_form
 
-Style HTML forms with less.js.
+Style HTML forms using less.js.
 
 ## Setup
 
-1. Copy `clean_form.less` to your website directory.
+1. Use the HTML structure defined in `test.html`.
 
-2. Define as many form configurations as you need in a separate `less`-file.
+       <form id="foo">
+           <div>
+               <label for="input_text">Label for text input</label>
+               <input id="input_text" type="text">
+               <div style="clear: both;"></div>
+           </div>
+       </form>
+
+2. Copy `clean_form.less` to your website directory.
+
+3. Define as many form configurations as you need in a separate `less`-file.
 
        @import url('clean_form.less');
 
@@ -33,19 +43,9 @@ Style HTML forms with less.js.
            .clean_form(right);
        }
 
-3. Compile.
+4. Compile.
 
        lessc test.less test.css
-
-4. Use the HTML structure defined in `test.html`.
-
-       <form id="foo">
-           <div>
-               <label for="input_text">Label for text input</label>
-               <input id="input_text" type="text">
-               <div style="clear: both;"></div>
-           </div>
-       </form>
 
 5. You probably also want to set the typography for all the form elements.
 
