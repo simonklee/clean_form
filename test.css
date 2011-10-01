@@ -86,17 +86,148 @@ form.test > div > div.right.help {
 }
 form.test > div > select.date_day {
   float: left;
+  clear: left;
   width: 48px;
 }
 form.test > div > select.date_month {
   float: left;
+  clear: none;
   margin: 0 0 0 8px;
   width: 120px;
 }
 form.test > div > select.date_year {
   float: left;
+  clear: none;
   margin: 0 0 0 8px;
   width: 64px;
+}
+form.test_nofloat {
+  width: 512px;
+}
+form.test_nofloat > div {
+  margin-bottom: 16px;
+}
+form.test_nofloat > div > label {
+  text-align: left;
+}
+form.test_nofloat > div > div.left, form.test_nofloat > div > label {
+  float: left;
+  margin-right: 8px;
+  width: 248px;
+}
+form.test_nofloat > div > div.right {
+  float: right;
+  margin-left: 8px;
+  width: 248px;
+}
+form.test_nofloat > div > input[type=password], form.test_nofloat > div > input[type=text] {
+  border: 1px solid #bfbfbf;
+  float: right;
+  height: 22px;
+  margin-left: 8px;
+  padding: 0;
+  width: 246px;
+}
+form.test_nofloat > div > textarea {
+  border: 1px solid #bfbfbf;
+  float: right;
+  height: 190px;
+  margin-left: 8px;
+  padding: 0;
+  width: 246px;
+}
+form.test_nofloat > div input[type=checkbox], form.test_nofloat > div input[type=radio] {
+  float: left;
+  margin: 0 0.5em 0 0;
+}
+form.test_nofloat > div > input[type=checkbox] {
+  margin-left: 8px;
+}
+form.test_nofloat > div > ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+form.test_nofloat > div > ul > li > label {
+  float: left;
+  margin-left: 8px;
+  width: 248px;
+}
+form.test_nofloat > div > select {
+  border: 1px solid #bfbfbf;
+  float: right;
+  height: 24px;
+  margin: 0 0 0 8px;
+  width: 248px;
+}
+form.test_nofloat > div > select[multiple=multiple] {
+  height: 128px;
+}
+form.test_nofloat > div > input[type=file] {
+  float: left;
+  margin: 0 0 0 8px;
+  width: 246px;
+}
+form.test_nofloat > div > input[type=button], form.test_nofloat > div > input[type=submit] {
+  float: right;
+  height: 24px;
+  margin: 0 0 0 8px;
+}
+form.test_nofloat > div div.right.error {
+  color: #bf0000;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+form.test_nofloat > div.error > input[type=password], form.test_nofloat > div.error > input[type=text], form.test_nofloat > div.error > textarea {
+  background-color: #ffefef;
+}
+form.test_nofloat > div > div.right.help {
+  color: #7f7f7f;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+form.test_nofloat > div > select.date_day {
+  float: left;
+  clear: left;
+  width: 48px;
+}
+form.test_nofloat > div > select.date_month {
+  float: left;
+  clear: none;
+  margin: 0 0 0 8px;
+  width: 120px;
+}
+form.test_nofloat > div > select.date_year {
+  float: left;
+  clear: none;
+  margin: 0 0 0 8px;
+  width: 64px;
+}
+form.test_nofloat > div > div.right,
+form.test_nofloat > div > input[type=button],
+form.test_nofloat > div > input[type=checkbox],
+form.test_nofloat > div > input[type=file],
+form.test_nofloat > div > input[type=password],
+form.test_nofloat > div > input[type=text],
+form.test_nofloat > div > select,
+form.test_nofloat > div > textarea,
+form.test_nofloat > div input[type=checkbox],
+form.test_nofloat > div input[type=radio] {
+  float: left;
+  margin-left: 0;
+  clear: left;
+}
+form.test_nofloat > div > input[type=button], form.test_nofloat > div > input[type=submit] {
+  clear: left;
+}
+form.test_nofloat > div > ul {
+  clear: left;
+  float: left;
+}
+form.test_nofloat > div > ul > li > label {
+  margin-left: 0;
+  float: right;
 }
 body,
 input,

@@ -102,6 +102,57 @@
     }
 }
 
+.clean_form_nofloat() {
+    > div {
+        > div.left,
+        > label {
+        }
+
+        > div.right,
+        > input[type=button],
+        > input[type=checkbox],
+        > input[type=file],
+        > input[type=password],
+        > input[type=text],
+        > select,
+        > textarea, 
+        input[type=checkbox],
+        input[type=radio] {
+            float: left;
+            margin-left: 0;
+            clear: left;
+            text-align: left;
+        }
+
+        > input[type=button],
+        > input[type=submit] {
+            clear: left;
+        }
+
+        > ul {
+            clear: left;
+            float: left;
+
+            > li > label {
+                margin-left: 0;
+                float: right;
+            }
+        }
+
+        > select.date_day {
+            clear: left;
+        }
+
+        > select.date_month {
+            clear: none;
+        }
+
+        > select.date_year {
+            clear: none;
+        }
+    }
+}
+
 .clean_form_error(
     @error_background_color: #ffefef,
     @error_color:            #bf0000,
@@ -149,11 +200,13 @@
         float: left;
         width: @date_day_width;
     }
+
     > div > select.date_month {
         float: left;
         margin: 0 0 0 @date_element_margin;
         width: (@form_right_width - @gutter_width / 2) - @date_day_width - @date_year_width - @date_element_margin * 2;
     }
+
     > div > select.date_year {
         float: left;
         margin: 0 0 0 @date_element_margin;
