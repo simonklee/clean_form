@@ -31,66 +31,62 @@
             float: right;
             margin-left: @gutter_width / 2;
             width: @form_right_width - @gutter_width / 2;
-        }
+            text-align: left;
 
-        > input[type=password],
-        > input[type=text] {
-            border: @element_border_size solid @element_border_color;
-            float: right;
-            height: @field_height - @element_border_size * 2;
-            margin-left: @gutter_width / 2;
-            padding: 0;
-            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
-        }
+            > input[type=password],
+            > input[type=text] {
+                border: @element_border_size solid @element_border_color;
+                height: @field_height - @element_border_size * 2;
+                width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
+            }
 
-        > textarea {
-            border: @element_border_size solid @element_border_color;
-            float: right;
-            height: @textarea_height - @element_border_size * 2;
-            margin-left: @gutter_width / 2;
-            padding: 0;
-            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
-        }
+            > textarea {
+                padding: 0;
+                border: @element_border_size solid @element_border_color;
+                height: @textarea_height - @element_border_size * 2;
+                width: @form_right_width - @element_border_size * 2 - @gutter_width / 2; 
+            }
 
-        input[type=checkbox],
-        input[type=radio] {
-            float: left;
-            margin: 0 0.5em 0 0;
-        }
-
-        > input[type=checkbox] {
-            margin-left: @gutter_width / 2;
-        }
-
-        > ul {
-            float: right;
-            list-style: none;
-            margin: 0;
-            padding-left: 0;
-
-            > li > label {
+            input[type=checkbox],
+            input[type=radio] {
                 float: left;
+                margin: 0 0.5em 0 0;
+            }
+
+            > input[type=checkbox] {
                 margin-left: @gutter_width / 2;
+            }
+
+            > ul {
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+
+                > li > label {
+                    float: left;
+                    margin-left: @gutter_width / 2;
+                    width: @form_right_width - @gutter_width / 2;
+                }
+            }
+
+            > select {
+                border: @element_border_size solid @element_border_color;
+                float: right;
+                height: @field_height;
+                margin: 0 0 0 @gutter_width / 2;
                 width: @form_right_width - @gutter_width / 2;
             }
-        }
 
-        > select {
-            border: @element_border_size solid @element_border_color;
-            float: right;
-            height: @field_height;
-            margin: 0 0 0 @gutter_width / 2;
-            width: @form_right_width - @gutter_width / 2;
-        }
+            > select[multiple=multiple] {
+                height: @select_multiple_height;
+            }
 
-        > select[multiple=multiple] {
-            height: @select_multiple_height;
-        }
-
-        > input[type=file] {
-            float: left;
-            margin: 0 0 0 @gutter_width / 2;
-            width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
+            > input[type=file] {
+                float: left;
+                margin: 0 0 0 @gutter_width / 2;
+                width: @form_right_width - @element_border_size * 2 - @gutter_width / 2;
+            }
+            
         }
 
         > input[type=button],
@@ -108,20 +104,21 @@
         > label {
         }
 
-        > div.right,
-        > input[type=button],
-        > input[type=checkbox],
-        > input[type=file],
-        > input[type=password],
-        > input[type=text],
-        > select,
-        > textarea, 
-        input[type=checkbox],
-        input[type=radio] {
-            float: left;
-            margin-left: 0;
-            clear: left;
-            text-align: left;
+        > div.right {
+            > input[type=button],
+            > input[type=checkbox],
+            > input[type=file],
+            > input[type=password],
+            > input[type=text],
+            > select,
+            > textarea, 
+            input[type=checkbox],
+            input[type=radio] {
+                float: left;
+                margin-left: 0;
+                clear: left;
+                text-align: left;
+            }
         }
 
         > input[type=button],
@@ -196,20 +193,26 @@
     @date_year_width:     64px,
     @date_element_margin: 8px) {
 
-    > div > select.date_day {
-        float: left;
-        width: @date_day_width;
-    }
+    > div > div.right {
+        > select.date_day {
+            clear: none;
+            float: left;
+            margin: 0;
+            width: @date_day_width;
+        }
 
-    > div > select.date_month {
-        float: left;
-        margin: 0 0 0 @date_element_margin;
-        width: (@form_right_width - @gutter_width / 2) - @date_day_width - @date_year_width - @date_element_margin * 2;
-    }
+        > select.date_month {
+            clear: none;
+            float: left;
+            margin: 0 0 0 @date_element_margin;
+            width: (@form_right_width - @gutter_width / 2) - @date_day_width - @date_year_width - @date_element_margin * 2;
+        }
 
-    > div > select.date_year {
-        float: left;
-        margin: 0 0 0 @date_element_margin;
-        width: @date_year_width;
+        > select.date_year {
+            clear: none;
+            float: left;
+            margin: 0 0 0 @date_element_margin;
+            width: @date_year_width;
+        }
     }
 }
